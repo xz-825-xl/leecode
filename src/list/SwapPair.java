@@ -29,8 +29,4 @@ public class SwapPair {
         return resultNode;
     }
 
-    public static void main(String[] args) {
-        ListNode node = ListNode.creatListNode();
-        System.out.println(swapPairs(node));
-    }
 }

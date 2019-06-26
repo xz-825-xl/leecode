@@ -43,9 +43,4 @@ public class AddTwoNumbers {
         return pre;
     }
 
-    public static void main(String[] args) {
-        ListNode l1 = ListNode.creatListNode();
-        ListNode l2 = ListNode.creatListNode();
-        System.out.println(addTwoNumbers(l1, l2));
-    }
 }
