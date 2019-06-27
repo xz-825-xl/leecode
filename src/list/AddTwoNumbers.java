@@ -2,45 +2,36 @@ package list;
 
 import entity.ListNode;
 
-import java.util.Objects;
-
-/** leeCode 2
+/**
+ * leeCode 2
+ *
  * @author Zhangying
  * @date 2019/6/25
  */
 public class AddTwoNumbers {
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode temp = null;
+        if (l1 == null || l2 == null) {
+            return l1 == null ? l2 : l1;
+        }
         int num = 0;
+        ListNode result = null, pre = null;
         while (l1 != null || l2 != null) {
-            int val = (Objects.isNull(l1) ? 0 : l1.val) + (Objects.isNull(l2) ? 0 : l2.val) + num;
-            if (val >= 10) {
-                val = val - 10;
-                num = 1;
+            int val = (l1 == null ? 0 : l1.val) + (l2 == null ? 0 : l2.val) + num;
+            num = (val >= 10) ? 1 : 0;
+            val = (val >= 10) ? val - 10 : val;
+            ListNode cur = new ListNode(val);
+            if (pre == null) {
+                result = cur;
             } else {
-                num = 0;
+                pre.next = cur;
             }
-            ListNode node = new ListNode(val);
-            node.next = temp;
-            temp = node;
-            l1 = Objects.isNull(l1) ? null : l1.next;
-            l2 = Objects.isNull(l2) ? null : l2.next;
-        }
-        if (num > 0) {
-            ListNode node = new ListNode(1);
-            node.next = temp;
-            temp = node;
-        }
-        ListNode pre = null;
-        ListNode cur = temp;
-        while (cur != null) {
-            ListNode next = cur.next;
-            cur.next = pre;
             pre = cur;
-            cur = next;
+            l1 = l1 == null ? null : l1.next;
+            l2 = l2 == null ? null : l2.next;
         }
-        return pre;
+        pre.next = num > 0 ? new ListNode(1) : null;
+        return result;
     }
 
 }
