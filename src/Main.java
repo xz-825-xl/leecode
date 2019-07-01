@@ -3,6 +3,7 @@ import entity.ListNode;
 import entity.TreeNode;
 import list.AddTwoNumbers;
 import list.SwapPair;
+import number.Reverse;
 import tree.IsSymmetric;
 
 public class Main {
@@ -20,9 +21,11 @@ public class Main {
 //        TwoSum.twoSum(array, 5);
 
         /*树相关*/
-        TreeNode treeNode = TreeNode.createTreeNodes();
-        treeNode.toString();
-        IsSymmetric.isSymmetric(treeNode);
+//        TreeNode treeNode = TreeNode.createTreeNodes();
+//        treeNode.toString();
+//        IsSymmetric.isSymmetric(treeNode);
+
+        System.out.println(Reverse.reverse(-2147483648));
 
     }
 }
