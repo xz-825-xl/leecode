@@ -3,7 +3,7 @@ package array;
 /**
  * @author Zhangying
  * @date 2019/7/2
- * <p>
+ *
  * leeCode 27
  */
 public class RemoveElement {
