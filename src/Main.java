@@ -1,10 +1,16 @@
+import array.Search;
 import array.TwoSum;
 import entity.ListNode;
 import entity.TreeNode;
 import list.AddTwoNumbers;
 import list.SwapPair;
 import number.Reverse;
+import recursion.ClimStairs;
 import tree.IsSymmetric;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.Date;
 
 public class Main {
 
@@ -25,7 +31,13 @@ public class Main {
 //        treeNode.toString();
 //        IsSymmetric.isSymmetric(treeNode);
 
-        System.out.println(Reverse.reverse(-2147483648));
-
+        Long start = (new Date()).getTime();
+        System.out.println(ClimStairs.climbStairs(44));
+        Long end = (new Date()).getTime();
+        System.out.println(end - start);
+        start = (new Date()).getTime();
+        System.out.println(ClimStairs.climbStairs2(44));
+        end = (new Date()).getTime();
+        System.out.println(end - start);
     }
 }
