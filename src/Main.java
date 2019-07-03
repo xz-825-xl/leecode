@@ -1,3 +1,4 @@
+import array.FindLength;
 import array.Search;
 import array.TwoSum;
 import entity.ListNode;
@@ -6,6 +7,7 @@ import list.AddTwoNumbers;
 import list.SwapPair;
 import number.Reverse;
 import recursion.ClimStairs;
+import str.IsPalindrome;
 import tree.IsSymmetric;
 
 import java.time.LocalDate;
@@ -31,13 +33,15 @@ public class Main {
 //        treeNode.toString();
 //        IsSymmetric.isSymmetric(treeNode);
 
-        Long start = (new Date()).getTime();
-        System.out.println(ClimStairs.climbStairs(44));
-        Long end = (new Date()).getTime();
-        System.out.println(end - start);
-        start = (new Date()).getTime();
-        System.out.println(ClimStairs.climbStairs2(44));
-        end = (new Date()).getTime();
-        System.out.println(end - start);
+//        Long start = (new Date()).getTime();
+//        System.out.println(ClimStairs.climbStairs(44));
+//        Long end = (new Date()).getTime();
+//        System.out.println(end - start);
+//        start = (new Date()).getTime();
+//        System.out.println(ClimStairs.climbStairs2(44));
+//        end = (new Date()).getTime();
+//        System.out.println(end - start);
+
+        System.out.println(FindLength.findLengthOfLCIS(new int[]{1,2,5,8,0}));
     }
 }
