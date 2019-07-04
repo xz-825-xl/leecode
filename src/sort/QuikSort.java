@@ -13,8 +13,31 @@ public class QuikSort {
      * 一趟快速排序的具体过程可描述为：从待排序列中任意选取一个记录(通常选取第一个记录)作为基准值，
      * 然后将记录中关键字比它小的记录都安置在它的位置之前，将记录中关键字比它大的记录都安置在它的位置之后
      */
-    public int[] insertSort(int[] nums) {
-
-        return nums;
+    public void quikSort(int[] nums, int start, int end) {
+        if (start >= end) {
+            return;
+        }
+        int i = start;
+        int j = end;
+        int baseVal = nums[start];
+        while (i < j) {
+            while (i < j && nums[j] >= baseVal) {
+                j--;
+            }
+            if (i < j) {
+                nums[i] = nums[j];
+                i++;
+            }
+            while (i < j && nums[i] < baseVal) {
+                i++;
+            }
+            if (i < j) {
+                nums[j] = nums[i];
+                j--;
+            }
+        }
+        nums[i] = baseVal;
+        quikSort(nums, start, i - 1);
+        quikSort(nums, i + 1, end);
     }
 }
