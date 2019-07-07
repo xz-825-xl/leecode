@@ -27,6 +27,11 @@ public class Main {
 
         System.out.println(Reverse.reverse(-2147483648));
         System.out.println(Reverse.reverse(-2147483648));
+        System.out.println(Reverse.reverse(-2147483648));
+        System.out.println(Reverse.reverse(-2147483648));
+        System.out.println(Reverse.reverse(-2147483648));
+        System.out.println(Reverse.reverse(-2147483648));
+        System.out.println(Reverse.reverse(-2147483648));
 
     }
 }
