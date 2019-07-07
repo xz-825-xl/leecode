@@ -2,6 +2,7 @@ import array.TwoSum;
 import entity.ListNode;
 import entity.TreeNode;
 import list.AddTwoNumbers;
+import list.GenerateParenthesist;
 import list.SwapPair;
 import number.Reverse;
 import tree.IsSymmetric;
@@ -25,7 +26,7 @@ public class Main {
 //        treeNode.toString();
 //        IsSymmetric.isSymmetric(treeNode);
 
-        System.out.println(Reverse.reverse(-2147483648));
+        System.out.println(GenerateParenthesist.generateParenthesis(3));
         System.out.println(Reverse.reverse(-2147483648));
 
     }
