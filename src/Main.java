@@ -26,6 +26,7 @@ public class Main {
 //        IsSymmetric.isSymmetric(treeNode);
 
         System.out.println(Reverse.reverse(-2147483648));
+        System.out.println(Reverse.reverse(-2147483648));
 
     }
 }
