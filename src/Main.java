@@ -1,18 +1,4 @@
-import array.FindLength;
-import array.Search;
-import array.TwoSum;
-import entity.ListNode;
-import entity.TreeNode;
-import list.AddTwoNumbers;
-import list.SwapPair;
-import number.Reverse;
-import recursion.ClimStairs;
-import str.IsPalindrome;
-import tree.IsSymmetric;
-
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.util.Date;
+import number.CountAndSay;
 
 public class Main {
 
@@ -42,6 +28,7 @@ public class Main {
 //        end = (new Date()).getTime();
 //        System.out.println(end - start);
 
-        System.out.println(FindLength.findLengthOfLCIS(new int[]{1,2,5,8,0}));
+//        System.out.println(FindLength.findLengthOfLCIS(new int[]{1,2,5,8,0}));
+        CountAndSay.countAndSay(4);
     }
 }
