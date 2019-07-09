@@ -1,3 +1,4 @@
+import list.GenerateParenthesist;
 import number.CountAndSay;
 
 public class Main {
@@ -29,6 +30,7 @@ public class Main {
 //        System.out.println(end - start);
 
 //        System.out.println(FindLength.findLengthOfLCIS(new int[]{1,2,5,8,0}));
-        CountAndSay.countAndSay(4);
+//        CountAndSay.countAndSay(4);
+        GenerateParenthesist.generateParenthesis(3);
     }
 }
