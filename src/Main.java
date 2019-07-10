@@ -1,3 +1,4 @@
+import array.Merge;
 import list.GenerateParenthesist;
 import number.CountAndSay;
 
@@ -31,6 +32,7 @@ public class Main {
 
 //        System.out.println(FindLength.findLengthOfLCIS(new int[]{1,2,5,8,0}));
 //        CountAndSay.countAndSay(4);
-        GenerateParenthesist.generateParenthesis(3);
+//        GenerateParenthesist.generateParenthesis(3);
+        Merge.merge2(new int[]{4,5,6,0,0,0}, 3, new int[]{1,2,3}, 3);
     }
 }
