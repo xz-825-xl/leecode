@@ -1,6 +1,8 @@
 import array.Merge;
+import entity.TreeNode;
 import list.GenerateParenthesist;
 import number.CountAndSay;
+import tree.IsSymmetric;
 
 public class Main {
 
@@ -17,9 +19,9 @@ public class Main {
 //        TwoSum.twoSum(array, 5);
 
         /*树相关*/
-//        TreeNode treeNode = TreeNode.createTreeNodes();
-//        treeNode.toString();
-//        IsSymmetric.isSymmetric(treeNode);
+        TreeNode treeNode = TreeNode.createTreeNodes();
+        treeNode.toString();
+        System.out.println(IsSymmetric.isSymmetric(treeNode));
 
 //        Long start = (new Date()).getTime();
 //        System.out.println(ClimStairs.climbStairs(44));
@@ -33,6 +35,6 @@ public class Main {
 //        System.out.println(FindLength.findLengthOfLCIS(new int[]{1,2,5,8,0}));
 //        CountAndSay.countAndSay(4);
 //        GenerateParenthesist.generateParenthesis(3);
-        Merge.merge2(new int[]{4,5,6,0,0,0}, 3, new int[]{1,2,3}, 3);
+//        Merge.merge2(new int[]{4,5,6,0,0,0}, 3, new int[]{1,2,3}, 3);
     }
 }

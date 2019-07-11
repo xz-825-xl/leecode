@@ -37,7 +37,7 @@ public class TreeNode {
             TreeNode node = queue.poll();
             builder.append(node == null ? null : node.val);
             builder.append(",");
-            if (node.left != null || node.right != null) {
+            if (node != null && (left != null || node.right != null)) {
                 queue.offer(node.left == null ? null : node.left);
                 queue.offer(node.right == null ? null : node.right);
             }
@@ -47,20 +47,32 @@ public class TreeNode {
     }
 
     public static TreeNode createTreeNodes() {
-        TreeNode treeNode = new TreeNode(1);
-        TreeNode treeNode2 = new TreeNode(2);
-        TreeNode treeNode3 = new TreeNode(2);
-        TreeNode treeNode4 = new TreeNode(3);
-        TreeNode treeNode5 = new TreeNode(4);
+        TreeNode treeNode = new TreeNode(2);
+        TreeNode treeNode2 = new TreeNode(3);
+        TreeNode treeNode3 = new TreeNode(3);
+        TreeNode treeNode4 = new TreeNode(4);
+        TreeNode treeNode5 = new TreeNode(5);
+        TreeNode treeNode11 = new TreeNode(5);
         TreeNode treeNode6 = new TreeNode(4);
-        TreeNode treeNode7 = new TreeNode(3);
+        TreeNode treeNode7 = new TreeNode(8);
+        TreeNode treeNode8 = new TreeNode(9);
+        TreeNode treeNode9 = new TreeNode(9);
+        TreeNode treeNode0 = new TreeNode(8);
 
         treeNode.left = treeNode2;
         treeNode.right = treeNode3;
         treeNode2.left = treeNode4;
         treeNode2.right = treeNode5;
-        treeNode3.left = treeNode6;
-        treeNode3.right = treeNode7;
+        treeNode3.left = treeNode11;
+        treeNode3.right = treeNode6;
+        treeNode4.left = null;
+        treeNode4.right = null;
+        treeNode5.left = treeNode7;
+        treeNode5.right = treeNode8;
+        treeNode11.left = null;
+        treeNode11.right = null;
+        treeNode6.left = treeNode9;
+        treeNode6.right = treeNode0;
         return treeNode;
     }
 
