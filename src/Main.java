@@ -19,9 +19,9 @@ public class Main {
 //        TwoSum.twoSum(array, 5);
 
         /*树相关*/
-        TreeNode treeNode = TreeNode.createTreeNodes();
-        treeNode.toString();
-        System.out.println(IsSymmetric.isSymmetric(treeNode));
+//        TreeNode treeNode = TreeNode.createTreeNodes();
+//        treeNode.toString();
+//        System.out.println(IsSymmetric.isSymmetric(treeNode));
 
 //        Long start = (new Date()).getTime();
 //        System.out.println(ClimStairs.climbStairs(44));
