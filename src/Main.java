@@ -3,6 +3,7 @@ import entity.TreeNode;
 import list.GenerateParenthesist;
 import number.CountAndSay;
 import str.CountSegments;
+import str.FirstUniqChar;
 import tree.IsSymmetric;
 
 public class Main {
@@ -37,6 +38,7 @@ public class Main {
 //        CountAndSay.countAndSay(4);
 //        GenerateParenthesist.generateParenthesis(3);
 //        Merge.merge2(new int[]{4,5,6,0,0,0}, 3, new int[]{1,2,3}, 3);
-        CountSegments.countSegments("Of all the gin joints in all the towns in all the world,   ");
+//        CountSegments.countSegments("Of all the gin joints in all the towns in all the world,   ");
+        FirstUniqChar.firstUniqChar2("loveleetcode");
     }
 }
