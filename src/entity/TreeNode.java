@@ -47,11 +47,11 @@ public class TreeNode {
     }
 
     public static TreeNode createTreeNodes() {
-        TreeNode treeNode = new TreeNode(2);
-        TreeNode treeNode2 = new TreeNode(3);
-        TreeNode treeNode3 = new TreeNode(3);
-        TreeNode treeNode4 = new TreeNode(4);
-        TreeNode treeNode5 = new TreeNode(5);
+        TreeNode treeNode = new TreeNode(3);
+        TreeNode treeNode2 = new TreeNode(9);
+        TreeNode treeNode3 = new TreeNode(20);
+        TreeNode treeNode4 = new TreeNode(15);
+        TreeNode treeNode5 = new TreeNode(17);
         TreeNode treeNode11 = new TreeNode(5);
         TreeNode treeNode6 = new TreeNode(4);
         TreeNode treeNode7 = new TreeNode(8);
@@ -61,18 +61,18 @@ public class TreeNode {
 
         treeNode.left = treeNode2;
         treeNode.right = treeNode3;
-        treeNode2.left = treeNode4;
-        treeNode2.right = treeNode5;
-        treeNode3.left = treeNode11;
-        treeNode3.right = treeNode6;
-        treeNode4.left = null;
-        treeNode4.right = null;
-        treeNode5.left = treeNode7;
-        treeNode5.right = treeNode8;
-        treeNode11.left = null;
-        treeNode11.right = null;
-        treeNode6.left = treeNode9;
-        treeNode6.right = treeNode0;
+        treeNode3.left = treeNode4;
+        treeNode3.right = treeNode5;
+//        treeNode3.left = treeNode11;
+//        treeNode3.right = treeNode6;
+//        treeNode4.left = null;
+//        treeNode4.right = null;
+//        treeNode5.left = treeNode7;
+//        treeNode5.right = treeNode8;
+//        treeNode11.left = null;
+//        treeNode11.right = null;
+//        treeNode6.left = treeNode9;
+//        treeNode6.right = treeNode0;
         return treeNode;
     }
 
