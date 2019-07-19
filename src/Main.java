@@ -43,6 +43,6 @@ public class Main {
 //        CountSegments.countSegments("Of all the gin joints in all the towns in all the world,   ");
 //        FirstUniqChar.firstUniqChar2("loveleetcode");
 //        System.out.println(SumOfLeftLeaves.sumOfLeftLeaves(TreeNode.createTreeNodes()));
-        System.out.println(ReadBinaryWatch.readBinaryWatch(1));
+//        System.out.println(ReadBinaryWatch.readBinaryWatch(1));
     }
 }
