@@ -7,7 +7,7 @@ package number;
  */
 public class ToHex {
 
-    public String toHex(int num) {
+    public static String toHex(int num) {
         if (num == 0) {
             return "0";
         }

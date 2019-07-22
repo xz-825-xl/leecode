@@ -3,6 +3,7 @@ import entity.TreeNode;
 import list.GenerateParenthesist;
 import list.ReadBinaryWatch;
 import number.CountAndSay;
+import number.ToHex;
 import str.CountSegments;
 import str.FirstUniqChar;
 import tree.IsSymmetric;
@@ -44,5 +45,6 @@ public class Main {
 //        FirstUniqChar.firstUniqChar2("loveleetcode");
 //        System.out.println(SumOfLeftLeaves.sumOfLeftLeaves(TreeNode.createTreeNodes()));
 //        System.out.println(ReadBinaryWatch.readBinaryWatch(1));
+        ToHex.toHex(-1);
     }
 }
