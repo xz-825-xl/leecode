@@ -6,6 +6,7 @@ import number.CountAndSay;
 import number.ToHex;
 import str.CountSegments;
 import str.FirstUniqChar;
+import str.LongestPalindrome;
 import tree.IsSymmetric;
 import tree.SumOfLeftLeaves;
 
@@ -45,6 +46,7 @@ public class Main {
 //        FirstUniqChar.firstUniqChar2("loveleetcode");
 //        System.out.println(SumOfLeftLeaves.sumOfLeftLeaves(TreeNode.createTreeNodes()));
 //        System.out.println(ReadBinaryWatch.readBinaryWatch(1));
-        ToHex.toHex(-1);
+        //ToHex.toHex(-1);
+        LongestPalindrome.longestPalindrome2("abccccdd");
     }
 }
