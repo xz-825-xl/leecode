@@ -1,14 +1,5 @@
-import array.Merge;
-import entity.TreeNode;
-import list.GenerateParenthesist;
-import list.ReadBinaryWatch;
-import number.CountAndSay;
-import number.ToHex;
-import str.CountSegments;
-import str.FirstUniqChar;
+import array.NumberOfBoomerangs;
 import str.LongestPalindrome;
-import tree.IsSymmetric;
-import tree.SumOfLeftLeaves;
 
 public class Main {
 
@@ -47,6 +38,8 @@ public class Main {
 //        System.out.println(SumOfLeftLeaves.sumOfLeftLeaves(TreeNode.createTreeNodes()));
 //        System.out.println(ReadBinaryWatch.readBinaryWatch(1));
         //ToHex.toHex(-1);
-        LongestPalindrome.longestPalindrome2("abccccdd");
+//        LongestPalindrome.longestPalindrome2("abccccdd");
+        int[][] points = {{0, 0}, {1, 0}, {2, 0}};
+        NumberOfBoomerangs.numberOfBoomerangs(points);
     }
 }
