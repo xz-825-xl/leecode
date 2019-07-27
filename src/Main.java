@@ -3,6 +3,7 @@ import entity.TreeNode;
 import list.GenerateParenthesist;
 import list.ReadBinaryWatch;
 import number.CountAndSay;
+import number.CountPrimes;
 import number.ToHex;
 import str.CountSegments;
 import str.FirstUniqChar;
@@ -47,6 +48,7 @@ public class Main {
 //        System.out.println(SumOfLeftLeaves.sumOfLeftLeaves(TreeNode.createTreeNodes()));
 //        System.out.println(ReadBinaryWatch.readBinaryWatch(1));
         //ToHex.toHex(-1);
-        LongestPalindrome.longestPalindrome2("abccccdd");
+//        LongestPalindrome.longestPalindrome2("abccccdd");
+        CountPrimes.countPrimes(10);
     }
 }
