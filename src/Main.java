@@ -1,4 +1,5 @@
 import array.NumberOfBoomerangs;
+import list.GetRow;
 import str.LongestPalindrome;
 
 public class Main {
@@ -39,7 +40,8 @@ public class Main {
 //        System.out.println(ReadBinaryWatch.readBinaryWatch(1));
         //ToHex.toHex(-1);
 //        LongestPalindrome.longestPalindrome2("abccccdd");
-        int[][] points = {{0, 0}, {1, 0}, {2, 0}};
-        NumberOfBoomerangs.numberOfBoomerangs(points);
+//        int[][] points = {{0, 0}, {1, 0}, {2, 0}};
+//        NumberOfBoomerangs.numberOfBoomerangs(points);
+        GetRow.getRow2(3);
     }
 }
