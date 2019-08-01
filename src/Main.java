@@ -2,6 +2,7 @@ import array.CanPlaceFlowers;
 import array.NumberOfBoomerangs;
 import list.GetRow;
 import str.LongestPalindrome;
+import str.ValidPalindrome;
 
 public class Main {
 
@@ -44,7 +45,8 @@ public class Main {
 //        int[][] points = {{0, 0}, {1, 0}, {2, 0}};
 //        NumberOfBoomerangs.numberOfBoomerangs(points);
 //        GetRow.getRow2(3);
-        int[] ints = {0,0,1,0,0};
-        CanPlaceFlowers.canPlaceFlowers(ints, 1);
+//        int[] ints = {0,0,1,0,0};
+//        CanPlaceFlowers.canPlaceFlowers(ints, 1);
+        ValidPalindrome.validPalindrome("abc");
     }
 }
