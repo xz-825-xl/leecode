@@ -1,4 +1,5 @@
 import array.CanPlaceFlowers;
+import array.LongestWord;
 import array.NumberOfBoomerangs;
 import list.GetRow;
 import str.LongestPalindrome;
@@ -47,6 +48,8 @@ public class Main {
 //        GetRow.getRow2(3);
 //        int[] ints = {0,0,1,0,0};
 //        CanPlaceFlowers.canPlaceFlowers(ints, 1);
-        ValidPalindrome.validPalindrome("abc");
+//        ValidPalindrome.validPalindrome("abc");
+        String[] strings = {"a","banana","app","appl","ap","apply","apple"};
+        LongestWord.longestWord(strings);
     }
 }
