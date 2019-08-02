@@ -7,7 +7,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 /**
  * @author Zhangying
@@ -32,17 +31,17 @@ public class LongestWord {
             Set<String> set = map.getOrDefault(i, new HashSet<>());
             for (String str : set) {
                 boolean flag = true;
-                for(int j = str.length() - 1; j > 0; j--){
-                    if(!strs.contains(str.substring(0, j))){
+                for (int j = str.length() - 1; j > 0; j--) {
+                    if (!strs.contains(str.substring(0, j))) {
                         flag = false;
                         break;
                     }
                 }
-                if(flag){
+                if (flag) {
                     list.add(str);
                 }
             }
-            if(!list.isEmpty()){
+            if (!list.isEmpty()) {
                 break;
             }
         }
