@@ -1,10 +1,7 @@
 package array;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -26,27 +23,28 @@ public class LongestWord {
             strs.add(word);
         }
 
-        List<String> list = new ArrayList<>();
+        String rs = "";
         for (int i = max; i > 0; i--) {
             Set<String> set = map.getOrDefault(i, new HashSet<>());
             for (String str : set) {
-                boolean flag = true;
-                for (int j = str.length() - 1; j > 0; j--) {
-                    if (!strs.contains(str.substring(0, j))) {
-                        flag = false;
-                        break;
+                if (rs == "" || (rs != "" && str.compareTo(rs) < 0)) {
+                    boolean flag = true;
+                    for (int j = str.length() - 1; j > 0; j--) {
+                        if (!strs.contains(str.substring(0, j))) {
+                            flag = false;
+                            break;
+                        }
+                    }
+                    if (flag) {
+                        rs = str;
                     }
                 }
-                if (flag) {
-                    list.add(str);
+                if(rs != ""){
+                    return rs;
                 }
             }
-            if (!list.isEmpty()) {
-                break;
-            }
         }
-        Collections.sort(list);
-        return list.isEmpty() ? "" : list.get(0);
+        return rs;
     }
 
 }
