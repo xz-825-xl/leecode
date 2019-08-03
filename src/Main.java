@@ -3,6 +3,7 @@ import array.LongestWord;
 import array.NumberOfBoomerangs;
 import list.GetRow;
 import str.LongestPalindrome;
+import str.ReverseWords;
 import str.ValidPalindrome;
 
 public class Main {
@@ -49,7 +50,8 @@ public class Main {
 //        int[] ints = {0,0,1,0,0};
 //        CanPlaceFlowers.canPlaceFlowers(ints, 1);
 //        ValidPalindrome.validPalindrome("abc");
-        String[] strings = {"a","banana","app","appl","ap","apply","apple"};
-        LongestWord.longestWord(strings);
+//        String[] strings = {"a","banana","app","appl","ap","apply","apple"};
+//        LongestWord.longestWord(strings);
+        ReverseWords.reverseWords("Let's take LeetCode contest");
     }
 }
