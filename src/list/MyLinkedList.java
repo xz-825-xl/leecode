@@ -88,21 +88,21 @@ public class MyLinkedList {
         if (index > length) {
             return;
         }
-        if(index < 0){
+        if(index == length){
+            addAtTail(val);
+            return;
+        }
+        if (index <= 0) {
             addAtHead(val);
             return;
         }
         MyNode next = node;
         int i = 0;
         while (i <= index) {
-            if (i == index || i == index - 1) {
+            if (i == index - 1) {
                 MyNode temp = new MyNode(val);
-                if (i == index) {
-                    node = temp;
-                } else {
-                    temp.next = next.next;
-                    next.next = temp;
-                }
+                temp.next = next.next;
+                next.next = temp;
                 length++;
                 return;
             }
