@@ -1,9 +1,4 @@
-import array.CanPlaceFlowers;
-import array.LongestWord;
-import array.NumberOfBoomerangs;
-import list.GetRow;
-import str.LongestPalindrome;
-import str.ValidPalindrome;
+import list.MyLinkedList;
 
 public class Main {
 
@@ -49,7 +44,15 @@ public class Main {
 //        int[] ints = {0,0,1,0,0};
 //        CanPlaceFlowers.canPlaceFlowers(ints, 1);
 //        ValidPalindrome.validPalindrome("abc");
-        String[] strings = {"a","banana","app","appl","ap","apply","apple"};
-        LongestWord.longestWord(strings);
+//        String[] strings = {"a","banana","app","appl","ap","apply","apple"};
+//        LongestWord.longestWord(strings);
+
+        MyLinkedList obj = new MyLinkedList();
+        obj.addAtIndex(-1, 0);
+        obj.deleteAtIndex(0);
+        obj.addAtIndex(3, 0);
+        obj.addAtTail(1);
+        obj.addAtTail(0);
+        obj.deleteAtIndex(6);
     }
 }
