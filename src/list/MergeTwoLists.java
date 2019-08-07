@@ -10,12 +10,10 @@ import entity.ListNode;
 public class MergeTwoLists {
 
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        ListNode one = l1;
-        ListNode two = l2;
         ListNode rs = null;
         ListNode pre = null;
-        while (one != null && two != null) {
-            ListNode listNode = new ListNode(Math.min(one.val, two.val));
+        while (l1 != null && l2 != null) {
+            ListNode listNode = new ListNode(Math.min(l1.val, l2.val));
             if (pre == null) {
                 rs = listNode;
                 pre = rs;
@@ -23,35 +21,27 @@ public class MergeTwoLists {
                 pre.next = listNode;
                 pre = pre.next;
             }
-            if (one.val <= two.val) {
-                one = one.next;
+            if (l1.val <= l2.val) {
+                l1 = l1.next;
             } else {
-                two = two.next;
+                l2 = l2.next;
             }
         }
 
-        while (one != null) {
-            ListNode listNode = new ListNode(one.val);
+        if (l1 != null) {
             if (pre == null) {
-                rs = listNode;
-                pre = rs;
+                rs = l1;
             } else {
-                pre.next = listNode;
-                pre = pre.next;
+                pre.next = l1;
             }
-            one = one.next;
         }
 
-        while (two != null) {
-            ListNode listNode = new ListNode(two.val);
+        if (l2 != null) {
             if (pre == null) {
-                rs = listNode;
-                pre = rs;
+                rs = l2;
             } else {
-                pre.next = listNode;
-                pre = pre.next;
+                pre.next = l2;
             }
-            two = two.next;
         }
         return rs;
     }
