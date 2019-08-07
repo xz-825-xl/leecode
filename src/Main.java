@@ -1,3 +1,5 @@
+import entity.ListNode;
+import list.MergeTwoLists;
 import list.MyLinkedList;
 
 public class Main {
@@ -47,12 +49,13 @@ public class Main {
 //        String[] strings = {"a","banana","app","appl","ap","apply","apple"};
 //        LongestWord.longestWord(strings);
 
-        MyLinkedList obj = new MyLinkedList();
-        obj.addAtIndex(-1, 0);
-        obj.deleteAtIndex(0);
-        obj.addAtIndex(3, 0);
-        obj.addAtTail(1);
-        obj.addAtTail(0);
-        obj.deleteAtIndex(6);
+//        MyLinkedList obj = new MyLinkedList();
+//        obj.addAtIndex(-1, 0);
+//        obj.deleteAtIndex(0);
+//        obj.addAtIndex(3, 0);
+//        obj.addAtTail(1);
+//        obj.addAtTail(0);
+//        obj.deleteAtIndex(6);
+        MergeTwoLists.mergeTwoLists(ListNode.creatListNode(), ListNode.creatListNode2());
     }
 }
