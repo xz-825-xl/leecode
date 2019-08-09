@@ -1,3 +1,4 @@
+import array.FindContentChildren;
 import entity.ListNode;
 import list.MergeTwoLists;
 import list.MyLinkedList;
@@ -56,6 +57,9 @@ public class Main {
 //        obj.addAtTail(1);
 //        obj.addAtTail(0);
 //        obj.deleteAtIndex(6);
-        MergeTwoLists.mergeTwoLists(ListNode.creatListNode(), ListNode.creatListNode2());
+//        MergeTwoLists.mergeTwoLists(ListNode.creatListNode(), ListNode.creatListNode2());
+        int[] ints1 = {10,9,8,7};
+        int[] ints2 = {5,6,7,8};
+        FindContentChildren.findContentChildren(ints1, ints2);
     }
 }
