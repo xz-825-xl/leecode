@@ -1,10 +1,7 @@
-import array.CanPlaceFlowers;
-import array.LongestWord;
-import array.NumberOfBoomerangs;
-import list.GetRow;
-import str.LongestPalindrome;
-import str.ReverseWords;
-import str.ValidPalindrome;
+import array.FindContentChildren;
+import entity.ListNode;
+import list.MergeTwoLists;
+import list.MyLinkedList;
 
 public class Main {
 
@@ -52,6 +49,17 @@ public class Main {
 //        ValidPalindrome.validPalindrome("abc");
 //        String[] strings = {"a","banana","app","appl","ap","apply","apple"};
 //        LongestWord.longestWord(strings);
-        ReverseWords.reverseWords("Let's take LeetCode contest");
+
+//        MyLinkedList obj = new MyLinkedList();
+//        obj.addAtIndex(-1, 0);
+//        obj.deleteAtIndex(0);
+//        obj.addAtIndex(3, 0);
+//        obj.addAtTail(1);
+//        obj.addAtTail(0);
+//        obj.deleteAtIndex(6);
+//        MergeTwoLists.mergeTwoLists(ListNode.creatListNode(), ListNode.creatListNode2());
+        int[] ints1 = {10,9,8,7};
+        int[] ints2 = {5,6,7,8};
+        FindContentChildren.findContentChildren(ints1, ints2);
     }
 }
