@@ -1,4 +1,5 @@
 import array.FindContentChildren;
+import array.LastStoneWeight;
 import entity.ListNode;
 import list.MergeTwoLists;
 import list.MyLinkedList;
@@ -58,8 +59,9 @@ public class Main {
 //        obj.addAtTail(0);
 //        obj.deleteAtIndex(6);
 //        MergeTwoLists.mergeTwoLists(ListNode.creatListNode(), ListNode.creatListNode2());
-        int[] ints1 = {10,9,8,7};
-        int[] ints2 = {5,6,7,8};
-        FindContentChildren.findContentChildren(ints1, ints2);
+        int[] ints1 = {2,7,4,1,8,1};
+//        int[] ints2 = {5,6,7,8};
+//        FindContentChildren.findContentChildren(ints1, ints2);
+        LastStoneWeight.lastStoneWeight(ints1);
     }
 }
