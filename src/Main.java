@@ -1,6 +1,7 @@
 import array.FindContentChildren;
 import array.KthLargest;
 import array.LastStoneWeight;
+import array.NextGreaterElement;
 import entity.ListNode;
 import list.MergeTwoLists;
 import list.MyLinkedList;
@@ -60,15 +61,17 @@ public class Main {
 //        obj.addAtTail(0);
 //        obj.deleteAtIndex(6);
 //        MergeTwoLists.mergeTwoLists(ListNode.creatListNode(), ListNode.creatListNode2());
-        int[] ints1 = {};
+        int[] ints1 = {4, 1, 2};
+        int[] ints2 = {1, 3, 4, 2};
 //        int[] ints2 = {5,6,7,8};
 //        FindContentChildren.findContentChildren(ints1, ints2);
 //        LastStoneWeight.lastStoneWeight(ints1);
-        KthLargest largest = new KthLargest(1, ints1);
-        largest.add(-3);
-        largest.add(-2);
-        largest.add(-4);
-        largest.add(0);
-        largest.add(4);
+//        KthLargest largest = new KthLargest(1, ints1);
+//        largest.add(-3);
+//        largest.add(-2);
+//        largest.add(-4);
+//        largest.add(0);
+//        largest.add(4);
+        NextGreaterElement.nextGreaterElement(ints1, ints2);
     }
 }
