@@ -2,6 +2,7 @@ import array.FindContentChildren;
 import array.KthLargest;
 import array.LastStoneWeight;
 import array.NextGreaterElement;
+import bit.FindComplement;
 import entity.ListNode;
 import list.MergeTwoLists;
 import list.MyLinkedList;
@@ -72,6 +73,7 @@ public class Main {
 //        largest.add(-4);
 //        largest.add(0);
 //        largest.add(4);
-        NextGreaterElement.nextGreaterElement(ints1, ints2);
+//        NextGreaterElement.nextGreaterElement(ints1, ints2);
+        FindComplement.findComplement(5);
     }
 }
