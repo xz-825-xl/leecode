@@ -7,6 +7,7 @@ import bit.FindComplement;
 import entity.ListNode;
 import list.MergeTwoLists;
 import list.MyLinkedList;
+import number.CheckPerfectNumber;
 
 public class Main {
 
@@ -76,6 +77,7 @@ public class Main {
 //        largest.add(4);
 //        NextGreaterElement.nextGreaterElement(ints1, ints2);
 //        FindComplement.findComplement(5);
-        TwoSum2.twoSum(ints1, -1);
+//        TwoSum2.twoSum(ints1, -1);
+        CheckPerfectNumber.checkPerfectNumber(28);
     }
 }
