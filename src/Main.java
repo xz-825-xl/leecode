@@ -4,6 +4,7 @@ import array.LastStoneWeight;
 import array.NextGreaterElement;
 import array.TwoSum2;
 import bit.FindComplement;
+import bit.HasAlternatingBits;
 import entity.ListNode;
 import list.MergeTwoLists;
 import list.MyLinkedList;
@@ -80,6 +81,7 @@ public class Main {
 //        FindComplement.findComplement(5);
 //        TwoSum2.twoSum(ints1, -1);
 //        CheckPerfectNumber.checkPerfectNumber(28);
-        CountBinarySubstrings.countBinarySubstrings("10101");
+//        CountBinarySubstrings.countBinarySubstrings("10101");
+        HasAlternatingBits.hasAlternatingBits(5);
     }
 }
