@@ -9,6 +9,7 @@ import entity.ListNode;
 import list.MergeTwoLists;
 import list.MyLinkedList;
 import number.CheckPerfectNumber;
+import number.ReachNumber;
 import str.CountBinarySubstrings;
 
 public class Main {
@@ -82,6 +83,7 @@ public class Main {
 //        TwoSum2.twoSum(ints1, -1);
 //        CheckPerfectNumber.checkPerfectNumber(28);
 //        CountBinarySubstrings.countBinarySubstrings("10101");
-        HasAlternatingBits.hasAlternatingBits(5);
+ //       HasAlternatingBits.hasAlternatingBits(5);
+        ReachNumber.reachNumber(-2);
     }
 }
