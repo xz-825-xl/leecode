@@ -11,6 +11,7 @@ import list.MyLinkedList;
 import number.CheckPerfectNumber;
 import number.ReachNumber;
 import str.CountBinarySubstrings;
+import tree.SortedArrayToBST;
 
 public class Main {
 
@@ -68,7 +69,7 @@ public class Main {
 //        obj.deleteAtIndex(6);
 //        MergeTwoLists.mergeTwoLists(ListNode.creatListNode(), ListNode.creatListNode2());
         int[] ints1 = {-1, 0};
-        int[] ints2 = {1, 3, 4, 2};
+        int[] ints2 = {-10,-3,0,5,9};
 //        int[] ints2 = {5,6,7,8};
 //        FindContentChildren.findContentChildren(ints1, ints2);
 //        LastStoneWeight.lastStoneWeight(ints1);
@@ -84,6 +85,7 @@ public class Main {
 //        CheckPerfectNumber.checkPerfectNumber(28);
 //        CountBinarySubstrings.countBinarySubstrings("10101");
  //       HasAlternatingBits.hasAlternatingBits(5);
-        ReachNumber.reachNumber(-2);
+ //       ReachNumber.reachNumber(-2);
+        SortedArrayToBST.sortedArrayToBST(ints2);
     }
 }

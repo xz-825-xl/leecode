@@ -9,14 +9,18 @@ import entity.TreeNode;
  */
 public class SortedArrayToBST {
 
-    public TreeNode sortedArrayToBST(int[] nums) {
-        if (nums.length == 0) {
+    public static TreeNode sortedArrayToBST(int[] nums) {
+        return nums.length == 0 ? null : toTree(nums, 0, nums.length - 1);
+    }
+
+    private static TreeNode toTree(int[] nums, Integer l, Integer r) {
+        if (l > r) {
             return null;
         }
-        TreeNode node = new TreeNode(nums[0]);
-        for (int i = 1; i < nums.length; i++) {
-
-        }
+        int index = (r + l) / 2;
+        TreeNode node = new TreeNode(nums[index]);
+        node.left = toTree(nums, l, index - 1);
+        node.right = toTree(nums, index + 1, r);
         return node;
     }
 }
