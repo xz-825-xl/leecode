@@ -1,4 +1,5 @@
 import array.FindContentChildren;
+import array.FindMaxAverage;
 import array.KthLargest;
 import array.LastStoneWeight;
 import array.NextGreaterElement;
@@ -69,7 +70,7 @@ public class Main {
 //        obj.deleteAtIndex(6);
 //        MergeTwoLists.mergeTwoLists(ListNode.creatListNode(), ListNode.creatListNode2());
         int[] ints1 = {-1, 0};
-        int[] ints2 = {-10,-3,0,5,9};
+        int[] ints2 = {0,4,0,3,2};
 //        int[] ints2 = {5,6,7,8};
 //        FindContentChildren.findContentChildren(ints1, ints2);
 //        LastStoneWeight.lastStoneWeight(ints1);
@@ -86,6 +87,7 @@ public class Main {
 //        CountBinarySubstrings.countBinarySubstrings("10101");
  //       HasAlternatingBits.hasAlternatingBits(5);
  //       ReachNumber.reachNumber(-2);
-        SortedArrayToBST.sortedArrayToBST(ints2);
+ //       SortedArrayToBST.sortedArrayToBST(ints2);
+        FindMaxAverage.findMaxAverage(ints2, 1);
     }
 }
