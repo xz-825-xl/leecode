@@ -1,9 +1,4 @@
-import array.FindContentChildren;
-import array.FindMaxAverage;
-import array.KthLargest;
-import array.LastStoneWeight;
-import array.NextGreaterElement;
-import array.TwoSum2;
+import array.*;
 import bit.FindComplement;
 import bit.HasAlternatingBits;
 import entity.ListNode;
@@ -88,6 +83,8 @@ public class Main {
  //       HasAlternatingBits.hasAlternatingBits(5);
  //       ReachNumber.reachNumber(-2);
  //       SortedArrayToBST.sortedArrayToBST(ints2);
-        FindMaxAverage.findMaxAverage(ints2, 1);
+ //       FindMaxAverage.findMaxAverage(ints2, 1);
+        char[] chars = {'c','f','j'};
+        NextGreatestLetter.nextGreatestLetter2(chars, 'j');
     }
 }
