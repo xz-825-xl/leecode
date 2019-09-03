@@ -5,6 +5,7 @@ import entity.ListNode;
 import list.MergeTwoLists;
 import list.MyLinkedList;
 import number.CheckPerfectNumber;
+import number.ConvertToTitle;
 import number.ReachNumber;
 import str.CountBinarySubstrings;
 import tree.SortedArrayToBST;
@@ -84,7 +85,8 @@ public class Main {
  //       ReachNumber.reachNumber(-2);
  //       SortedArrayToBST.sortedArrayToBST(ints2);
  //       FindMaxAverage.findMaxAverage(ints2, 1);
-        char[] chars = {'c','f','j'};
-        NextGreatestLetter.nextGreatestLetter2(chars, 'j');
+//        char[] chars = {'c','f','j'};
+//        NextGreatestLetter.nextGreatestLetter2(chars, 'j');
+        ConvertToTitle.convertToTitle(26);
     }
 }
