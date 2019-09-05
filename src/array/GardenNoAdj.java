@@ -24,12 +24,12 @@ public class GardenNoAdj {
         for (int i = 1; i <= N; i++) {
             boolean[] tags = new boolean[4];
             for (Integer n : map.get(i)) {
-                if(res[n - 1] > 0){
+                if (res[n - 1] > 0) {
                     tags[res[n - 1] - 1] = true;
                 }
             }
-            for(int j = 0; j < 4; j++){
-                if(!tags[j]){
+            for (int j = 0; j < 4; j++) {
+                if (!tags[j]) {
                     res[i - 1] = j + 1;
                     break;
                 }
@@ -43,16 +43,16 @@ public class GardenNoAdj {
         int[][] pointPath = new int[N][3];
         for (int[] path : paths) {
             int[] array = pointPath[path[0] - 1];
-            for(int i = 0; i < array.length; i++){
-                if(array[i] == 0){
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] == 0) {
                     array[i] = path[1];
                     break;
                 }
             }
             pointPath[path[0] - 1] = array;
             array = pointPath[path[1] - 1];
-            for(int i = 0; i < array.length; i++){
-                if(array[i] == 0){
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] == 0) {
                     array[i] = path[0];
                     break;
                 }
@@ -62,16 +62,43 @@ public class GardenNoAdj {
         for (int i = 1; i <= N; i++) {
             boolean[] tags = new boolean[4];
             for (int n : pointPath[i - 1]) {
-                if(n > 0 && res[n - 1] > 0){
+                if (n > 0 && res[n - 1] > 0) {
                     tags[res[n - 1] - 1] = true;
                 }
             }
-            for(int j = 0; j < 4; j++){
-                if(!tags[j]){
+            for (int j = 0; j < 4; j++) {
+                if (!tags[j]) {
                     res[i - 1] = j + 1;
                     break;
                 }
             }
+        }
+        return res;
+    }
+
+    public static int[] gardenNoAdj3(int N, int[][] paths) {
+        int[] res = new int[N];
+        int[][] pointPath = new int[N][3];
+        for (int[] path : paths) {
+            int temp = 0;
+            while (pointPath[path[0] - 1][temp] != 0) {
+                temp++;
+            }
+            pointPath[path[0] - 1][temp] = path[1];
+            temp = 0;
+            while (pointPath[path[1] - 1][temp] != 0) {
+                temp++;
+            }
+            pointPath[path[1] - 1][temp] = path[0];
+        }
+        for (int i = 1; i <= N; i++) {
+            int temp = 1;
+            while ((pointPath[i - 1][0] > 0 && res[pointPath[i - 1][0] - 1] == temp)
+                    || (pointPath[i - 1][1] > 0 && res[pointPath[i - 1][1] - 1] == temp)
+                    || (pointPath[i - 1][2] > 0 && res[pointPath[i - 1][2] - 1] == temp)) {
+                temp++;
+            }
+            res[i - 1] = temp;
         }
         return res;
     }
