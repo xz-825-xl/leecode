@@ -87,6 +87,11 @@ public class Main {
  //       FindMaxAverage.findMaxAverage(ints2, 1);
 //        char[] chars = {'c','f','j'};
 //        NextGreatestLetter.nextGreatestLetter2(chars, 'j');
-        ConvertToTitle.convertToTitle(26);
+//        ConvertToTitle.convertToTitle(26);
+        int[] ins1 = {1, 2};
+        int[] ins2 = {2, 3};
+        int[] ins3 = {3, 1};
+        int[][] array = {ins1, ins2, ins3};
+        GardenNoAdj.gardenNoAdj2(3, array);
     }
 }
