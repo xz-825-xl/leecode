@@ -1,4 +1,5 @@
 import array.*;
+import bit.BinaryGap;
 import bit.FindComplement;
 import bit.HasAlternatingBits;
 import entity.ListNode;
@@ -92,6 +93,7 @@ public class Main {
         int[] ins2 = {2, 3};
         int[] ins3 = {3, 1};
         int[][] array = {ins1, ins2, ins3};
-        GardenNoAdj.gardenNoAdj2(3, array);
+//        GardenNoAdj.gardenNoAdj2(3, array);
+        BinaryGap.binaryGap(22);
     }
 }
