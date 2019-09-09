@@ -1,4 +1,5 @@
 import array.*;
+import bit.BinaryGap;
 import bit.FindComplement;
 import bit.HasAlternatingBits;
 import entity.ListNode;
@@ -8,7 +9,7 @@ import number.CheckPerfectNumber;
 import number.ConvertToTitle;
 import number.ReachNumber;
 import str.CountBinarySubstrings;
-import str.FindAnagrams;
+import str.NumberOfLines;
 import tree.SortedArrayToBST;
 
 public class Main {
@@ -89,11 +90,12 @@ public class Main {
 //        char[] chars = {'c','f','j'};
 //        NextGreatestLetter.nextGreatestLetter2(chars, 'j');
 //        ConvertToTitle.convertToTitle(26);
-//        int[] ins1 = {1, 2};
-//        int[] ins2 = {2, 3};
-//        int[] ins3 = {3, 1};
-//        int[][] array = {ins1, ins2, ins3};
+        int[] ins1 = {10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10};
+        int[] ins2 = {2, 3};
+        int[] ins3 = {3, 1};
+        int[][] array = {ins1, ins2, ins3};
 //        GardenNoAdj.gardenNoAdj2(3, array);
-        FindAnagrams.findAnagrams("abab", "ab");
+//        BinaryGap.binaryGap(22);
+        NumberOfLines.numberOfLines(ins1, "abcdefghijklmnopqrstuvwxyz");
     }
 }
