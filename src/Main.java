@@ -96,6 +96,7 @@ public class Main {
         int[][] array = {ins1, ins2, ins3};
 //        GardenNoAdj.gardenNoAdj2(3, array);
 //        BinaryGap.binaryGap(22);
-        NumberOfLines.numberOfLines(ins1, "abcdefghijklmnopqrstuvwxyz");
+//        NumberOfLines.numberOfLines(ins1, "abcdefghijklmnopqrstuvwxyz");
+        DietPlanPerformance.dietPlanPerformance(new int[]{1, 2, 3, 4, 5}, 1, 3, 3);
     }
 }
