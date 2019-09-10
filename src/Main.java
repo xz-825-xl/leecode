@@ -97,6 +97,7 @@ public class Main {
 //        GardenNoAdj.gardenNoAdj2(3, array);
 //        BinaryGap.binaryGap(22);
 //        NumberOfLines.numberOfLines(ins1, "abcdefghijklmnopqrstuvwxyz");
-        DietPlanPerformance.dietPlanPerformance(new int[]{1, 2, 3, 4, 5}, 1, 3, 3);
+//        DietPlanPerformance.dietPlanPerformance(new int[]{1, 2, 3, 4, 5}, 1, 3, 3);
+        MaxCount.maxCount(3, 3, new int[][]{{2, 2}, {3, 3}});
     }
 }
