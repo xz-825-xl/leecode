@@ -99,5 +99,7 @@ public class Main {
 //        NumberOfLines.numberOfLines(ins1, "abcdefghijklmnopqrstuvwxyz");
 //        DietPlanPerformance.dietPlanPerformance(new int[]{1, 2, 3, 4, 5}, 1, 3, 3);
         MaxCount.maxCount(3, 3, new int[][]{{2, 2}, {3, 3}});
+//        NumberOfLines.numberOfLines(ins1, "abcdefghijklmnopqrstuvwxyz");
+        HasGroupsSizeX.hasGroupsSizeX(new int[]{1,1,1,1,2,2,2,2,2,2});
     }
 }
