@@ -10,6 +10,7 @@ import number.ConvertToTitle;
 import number.ReachNumber;
 import str.CountBinarySubstrings;
 import str.NumberOfLines;
+import str.RemoveDuplicates;
 import tree.SortedArrayToBST;
 
 public class Main {
@@ -98,8 +99,9 @@ public class Main {
 //        BinaryGap.binaryGap(22);
 //        NumberOfLines.numberOfLines(ins1, "abcdefghijklmnopqrstuvwxyz");
 //        DietPlanPerformance.dietPlanPerformance(new int[]{1, 2, 3, 4, 5}, 1, 3, 3);
-        MaxCount.maxCount(3, 3, new int[][]{{2, 2}, {3, 3}});
+//        MaxCount.maxCount(3, 3, new int[][]{{2, 2}, {3, 3}});
 //        NumberOfLines.numberOfLines(ins1, "abcdefghijklmnopqrstuvwxyz");
-        HasGroupsSizeX.hasGroupsSizeX(new int[]{1,1,1,1,2,2,2,2,2,2});
+//        HasGroupsSizeX.hasGroupsSizeX(new int[]{1,1,1,1,2,2,2,2,2,2});
+        RemoveDuplicates.removeDuplicates("aaaaaaaa");
     }
 }
