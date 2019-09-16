@@ -11,6 +11,7 @@ import number.ReachNumber;
 import str.CountBinarySubstrings;
 import str.NumberOfLines;
 import str.RemoveDuplicates;
+import str.RemoveOuterParentheses;
 import tree.SortedArrayToBST;
 
 public class Main {
@@ -102,6 +103,7 @@ public class Main {
 //        MaxCount.maxCount(3, 3, new int[][]{{2, 2}, {3, 3}});
 //        NumberOfLines.numberOfLines(ins1, "abcdefghijklmnopqrstuvwxyz");
 //        HasGroupsSizeX.hasGroupsSizeX(new int[]{1,1,1,1,2,2,2,2,2,2});
-        RemoveDuplicates.removeDuplicates("aaaaaaaa");
+//        RemoveDuplicates.removeDuplicates("aaaaaaaa");
+        RemoveOuterParentheses.removeOuterParentheses("(()())(())");
     }
 }
