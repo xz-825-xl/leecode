@@ -10,8 +10,7 @@ import number.ConvertToTitle;
 import number.ReachNumber;
 import str.CountBinarySubstrings;
 import str.NumberOfLines;
-import str.ReverseOnlyLetters;
-import str.ShortestCompletingWord;
+import str.RemoveDuplicates;
 import tree.SortedArrayToBST;
 
 public class Main {
@@ -101,7 +100,8 @@ public class Main {
 //        NumberOfLines.numberOfLines(ins1, "abcdefghijklmnopqrstuvwxyz");
 //        DietPlanPerformance.dietPlanPerformance(new int[]{1, 2, 3, 4, 5}, 1, 3, 3);
 //        MaxCount.maxCount(3, 3, new int[][]{{2, 2}, {3, 3}});
-//        ReverseOnlyLetters.reverseOnlyLetters("a-bC-dEf-ghIj");
-        ShortestCompletingWord.shortestCompletingWord("1s3 456" , new String[]{"looks","pest","stew","show"});
+//        NumberOfLines.numberOfLines(ins1, "abcdefghijklmnopqrstuvwxyz");
+//        HasGroupsSizeX.hasGroupsSizeX(new int[]{1,1,1,1,2,2,2,2,2,2});
+        RemoveDuplicates.removeDuplicates("aaaaaaaa");
     }
 }
