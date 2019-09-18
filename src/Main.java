@@ -8,6 +8,7 @@ import list.MyLinkedList;
 import number.CheckPerfectNumber;
 import number.ConvertToTitle;
 import number.ReachNumber;
+import number.RotatedDigits;
 import str.CountBinarySubstrings;
 import str.NumberOfLines;
 import str.RemoveDuplicates;
@@ -104,6 +105,7 @@ public class Main {
 //        NumberOfLines.numberOfLines(ins1, "abcdefghijklmnopqrstuvwxyz");
 //        HasGroupsSizeX.hasGroupsSizeX(new int[]{1,1,1,1,2,2,2,2,2,2});
 //        RemoveDuplicates.removeDuplicates("aaaaaaaa");
-        RemoveOuterParentheses.removeOuterParentheses("(()())(())");
+//        RemoveOuterParentheses.removeOuterParentheses("(()())(())");
+        RotatedDigits.rotatedDigits(10);
     }
 }
