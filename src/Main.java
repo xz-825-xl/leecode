@@ -106,6 +106,8 @@ public class Main {
 //        HasGroupsSizeX.hasGroupsSizeX(new int[]{1,1,1,1,2,2,2,2,2,2});
 //        RemoveDuplicates.removeDuplicates("aaaaaaaa");
 //        RemoveOuterParentheses.removeOuterParentheses("(()())(())");
-        RotatedDigits.rotatedDigits(10);
+//        RotatedDigits.rotatedDigits(10);
+//        OrangesRotting.orangesRotting(new int[][]{{2},{1},{1},{1},{2},{1},{1}});
+        OrangesRotting.orangesRotting(new int[][]{{2,1,1},{1,1,0},{0,1,1}});
     }
 }
