@@ -109,6 +109,9 @@ public class Main {
 //        RotatedDigits.rotatedDigits(10);
 //        OrangesRotting.orangesRotting(new int[][]{{2},{1},{1},{1},{2},{1},{1}});
 //        OrangesRotting.orangesRotting(new int[][]{{2,1,1},{1,1,0},{0,1,1}});
+//        SortedSquares.sortedSquares(new int[]{-4,-1,0,3,10});
+        AddToArrayForm.addToArrayForm(new int[]{1,2,0,0}, 34);
+//        OrangesRotting.orangesRotting(new int[][]{{2,1,1},{1,1,0},{0,1,1}});
         SumEvenAfterQueries.sumEvenAfterQueries(new int[]{1, 2, 3, 4}, new int[][]{{1,0},{-3,1},{-4,0},{2,3}});
     }
 }
