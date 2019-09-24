@@ -3,6 +3,7 @@ import bit.BinaryGap;
 import bit.FindComplement;
 import bit.HasAlternatingBits;
 import entity.ListNode;
+import entity.TreeNode;
 import list.MergeTwoLists;
 import list.MyLinkedList;
 import number.CheckPerfectNumber;
@@ -13,6 +14,7 @@ import str.CountBinarySubstrings;
 import str.NumberOfLines;
 import str.RemoveDuplicates;
 import str.RemoveOuterParentheses;
+import tree.DiameterOfBinaryTree;
 import tree.SortedArrayToBST;
 
 public class Main {
@@ -113,6 +115,8 @@ public class Main {
 //        AddToArrayForm.addToArrayForm(new int[]{1,2,0,0}, 34);
 //        OrangesRotting.orangesRotting(new int[][]{{2,1,1},{1,1,0},{0,1,1}});
 //        SumEvenAfterQueries.sumEvenAfterQueries(new int[]{1, 2, 3, 4}, new int[][]{{1,0},{-3,1},{-4,0},{2,3}});
-    RelativeSortArray.relativeSortArray(new int[]{2,3,1,3,2,4,6,7,9,2,19}, new int[]{2,1,4,3,9,6});
+//   RelativeSortArray.relativeSortArray(new int[]{2,3,1,3,2,4,6,7,9,2,19}, new int[]{2,1,4,3,9,6});
+        TreeNode treeNode = TreeNode.createTreeNodes();
+        DiameterOfBinaryTree.diameterOfBinaryTree(treeNode);
     }
 }
