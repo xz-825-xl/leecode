@@ -118,7 +118,7 @@ public class Main {
 //        SumEvenAfterQueries.sumEvenAfterQueries(new int[]{1, 2, 3, 4}, new int[][]{{1,0},{-3,1},{-4,0},{2,3}});
 //   RelativeSortArray.relativeSortArray(new int[]{2,3,1,3,2,4,6,7,9,2,19}, new int[]{2,1,4,3,9,6});
         TreeNode treeNode = TreeNode.createTreeNodes();
-//        DiameterOfBinaryTree.diameterOfBinaryTree(treeNode);
-        BitwiseComplement.bitwiseComplement(0);
+        DiameterOfBinaryTree.diameterOfBinaryTree(treeNode);
+//        BitwiseComplement.bitwiseComplement(0);
     }
 }
