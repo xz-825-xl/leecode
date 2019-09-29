@@ -9,7 +9,6 @@ import list.MergeTwoLists;
 import list.MyLinkedList;
 import number.CheckPerfectNumber;
 import number.ConvertToTitle;
-import number.DayOfTheWeek;
 import number.ReachNumber;
 import number.RotatedDigits;
 import str.CountBinarySubstrings;
@@ -75,7 +74,7 @@ public class Main {
 //        obj.deleteAtIndex(6);
 //        MergeTwoLists.mergeTwoLists(ListNode.creatListNode(), ListNode.creatListNode2());
         int[] ints1 = {-1, 0};
-        int[] ints2 = {0,4,0,3,2};
+        int[] ints2 = {0, 4, 0, 3, 2};
 //        int[] ints2 = {5,6,7,8};
 //        FindContentChildren.findContentChildren(ints1, ints2);
 //        LastStoneWeight.lastStoneWeight(ints1);
@@ -90,14 +89,14 @@ public class Main {
 //        TwoSum2.twoSum(ints1, -1);
 //        CheckPerfectNumber.checkPerfectNumber(28);
 //        CountBinarySubstrings.countBinarySubstrings("10101");
- //       HasAlternatingBits.hasAlternatingBits(5);
- //       ReachNumber.reachNumber(-2);
- //       SortedArrayToBST.sortedArrayToBST(ints2);
- //       FindMaxAverage.findMaxAverage(ints2, 1);
+        //       HasAlternatingBits.hasAlternatingBits(5);
+        //       ReachNumber.reachNumber(-2);
+        //       SortedArrayToBST.sortedArrayToBST(ints2);
+        //       FindMaxAverage.findMaxAverage(ints2, 1);
 //        char[] chars = {'c','f','j'};
 //        NextGreatestLetter.nextGreatestLetter2(chars, 'j');
 //        ConvertToTitle.convertToTitle(26);
-        int[] ins1 = {10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10};
+        int[] ins1 = {10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10};
         int[] ins2 = {2, 3};
         int[] ins3 = {3, 1};
         int[][] array = {ins1, ins2, ins3};
@@ -121,6 +120,6 @@ public class Main {
         TreeNode treeNode = TreeNode.createTreeNodes();
 //        DiameterOfBinaryTree.diameterOfBinaryTree(treeNode);
 //        BitwiseComplement.bitwiseComplement(0);
-        DayOfTheWeek.dayOfTheWeek(31, 8, 2019);
+        CommonChars.commonChars(new String[]{"bella", "label", "roller"});
     }
 }
