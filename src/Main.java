@@ -120,7 +120,8 @@ public class Main {
         TreeNode treeNode = TreeNode.createTreeNodes();
 //        DiameterOfBinaryTree.diameterOfBinaryTree(treeNode);
 //        BitwiseComplement.bitwiseComplement(0);
-        CommonChars.commonChars(new String[]{"bella", "label", "roller"});
-        CalPoints.calPoints(new String[]{"5","2","C","D","+"});
+//        CommonChars.commonChars(new String[]{"bella", "label", "roller"});
+//        CalPoints.calPoints(new String[]{"5","2","C","D","+"});
+        FindUnsortedSubarray.findUnsortedSubarray2(new int[]{2,6,4,8,10,9,15});
     }
 }
