@@ -121,5 +121,6 @@ public class Main {
 //        DiameterOfBinaryTree.diameterOfBinaryTree(treeNode);
 //        BitwiseComplement.bitwiseComplement(0);
         CommonChars.commonChars(new String[]{"bella", "label", "roller"});
+        CalPoints.calPoints(new String[]{"5","2","C","D","+"});
     }
 }
