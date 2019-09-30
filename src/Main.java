@@ -122,6 +122,7 @@ public class Main {
 //        BitwiseComplement.bitwiseComplement(0);
 //        CommonChars.commonChars(new String[]{"bella", "label", "roller"});
 //        CalPoints.calPoints(new String[]{"5","2","C","D","+"});
-        FindUnsortedSubarray.findUnsortedSubarray2(new int[]{2,6,4,8,10,9,15});
+//        FindUnsortedSubarray.findUnsortedSubarray2(new int[]{2,6,4,8,10,9,15});
+        NumUniqueEmails.numUniqueEmails(new String[]{"testemail@leetcode.com","testemail1@leetcode.com","testemail+david@lee.tcode.com"});
     }
 }
