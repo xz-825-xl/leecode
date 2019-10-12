@@ -9,6 +9,7 @@ import list.MergeTwoLists;
 import list.MyLinkedList;
 import number.CheckPerfectNumber;
 import number.ConvertToTitle;
+import number.GetHint;
 import number.ReachNumber;
 import number.RotatedDigits;
 import str.CountBinarySubstrings;
@@ -124,6 +125,7 @@ public class Main {
 //        CalPoints.calPoints(new String[]{"5","2","C","D","+"});
 //        FindUnsortedSubarray.findUnsortedSubarray2(new int[]{2,6,4,8,10,9,15});
 //        NumUniqueEmails.numUniqueEmails(new String[]{"testemail@leetcode.com","testemail1@leetcode.com","testemail+david@lee.tcode.com"});
-        InvalidTransactions.invalidTransactions(new String[]{"alex,676,260,bangkok","bob,656,1366,bangkok","alex,393,616,bangkok","bob,820,990,amsterdam","alex,596,1390,amsterdam"});
+//        InvalidTransactions.invalidTransactions(new String[]{"alex,676,260,bangkok","bob,656,1366,bangkok","alex,393,616,bangkok","bob,820,990,amsterdam","alex,596,1390,amsterdam"});
+        GetHint.getHint("1807","7810");
     }
 }
