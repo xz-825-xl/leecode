@@ -127,6 +127,7 @@ public class Main {
 //        NumUniqueEmails.numUniqueEmails(new String[]{"testemail@leetcode.com","testemail1@leetcode.com","testemail+david@lee.tcode.com"});
 //        InvalidTransactions.invalidTransactions(new String[]{"alex,676,260,bangkok","bob,656,1366,bangkok","alex,393,616,bangkok","bob,820,990,amsterdam","alex,596,1390,amsterdam"});
 //        GetHint.getHint("1807","7810");
-        HeightChecker.heightChecker(new int[]{1,2,2,2,2,2,1,2,2,1});
+//        HeightChecker.heightChecker(new int[]{1,2,2,2,2,2,1,2,2,1});
+        DistanceBetweenBusStops.distanceBetweenBusStops(new int[]{1,2,3,4}, 0, 3);
     }
 }
