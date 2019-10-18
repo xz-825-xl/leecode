@@ -130,6 +130,7 @@ public class Main {
 //        GetHint.getHint("1807","7810");
 //        HeightChecker.heightChecker(new int[]{1,2,2,2,2,2,1,2,2,1});
  //       DistanceBetweenBusStops.distanceBetweenBusStops(new int[]{1,2,3,4}, 0, 3);
-        DayOfYear.dayOfYear("2004-03-01");
+ //       DayOfYear.dayOfYear("2004-03-01");
+        CountCharacters.countCharacters(new String[]{"cat","bt","hat","tree"}, "atach");
     }
 }
