@@ -131,6 +131,7 @@ public class Main {
 //        HeightChecker.heightChecker(new int[]{1,2,2,2,2,2,1,2,2,1});
  //       DistanceBetweenBusStops.distanceBetweenBusStops(new int[]{1,2,3,4}, 0, 3);
  //       DayOfYear.dayOfYear("2004-03-01");
-        CountCharacters.countCharacters(new String[]{"cat","bt","hat","tree"}, "atach");
+ //       CountCharacters.countCharacters(new String[]{"cat","bt","hat","tree"}, "atach");
+          DuplicateZeros.duplicateZeros(new int[]{1,0,2,3,0,4,5,0});
     }
 }
