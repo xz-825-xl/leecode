@@ -11,6 +11,7 @@ import number.CheckPerfectNumber;
 import number.ConvertToTitle;
 import number.DayOfYear;
 import number.GetHint;
+import number.NumPrimeArrangements;
 import number.ReachNumber;
 import number.RotatedDigits;
 import str.CountBinarySubstrings;
@@ -132,6 +133,7 @@ public class Main {
  //       DistanceBetweenBusStops.distanceBetweenBusStops(new int[]{1,2,3,4}, 0, 3);
  //       DayOfYear.dayOfYear("2004-03-01");
  //       CountCharacters.countCharacters(new String[]{"cat","bt","hat","tree"}, "atach");
-          DuplicateZeros.duplicateZeros(new int[]{1,0,2,3,0,4,5,0});
+ //         DuplicateZeros.duplicateZeros(new int[]{1,0,2,3,0,4,5,0});
+        System.out.println(NumPrimeArrangements.numPrimeArrangements(100));
     }
 }
