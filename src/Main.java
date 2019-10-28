@@ -6,6 +6,7 @@ import bit.HasAlternatingBits;
 import entity.ListNode;
 import entity.TreeNode;
 import list.MergeTwoLists;
+import list.MiddleNode;
 import list.MyLinkedList;
 import number.CheckPerfectNumber;
 import number.ConvertToTitle;
@@ -135,6 +136,7 @@ public class Main {
  //       CountCharacters.countCharacters(new String[]{"cat","bt","hat","tree"}, "atach");
  //         DuplicateZeros.duplicateZeros3(new int[]{8,4,5,0,0,0,0,7});
  //       System.out.println(NumPrimeArrangements.numPrimeArrangements(100));
-        MinimumAbsDifference.minimumAbsDifference(new int[]{4,2,1,3});
+ //       MinimumAbsDifference.minimumAbsDifference(new int[]{4,2,1,3});
+        MiddleNode.middleNode(ListNode.creatListNode());
     }
 }
