@@ -16,6 +16,7 @@ import number.NumPrimeArrangements;
 import number.ReachNumber;
 import number.RotatedDigits;
 import str.CountBinarySubstrings;
+import str.IsLongPressedName;
 import str.NumberOfLines;
 import str.RemoveDuplicates;
 import str.RemoveOuterParentheses;
@@ -138,6 +139,7 @@ public class Main {
  //       System.out.println(NumPrimeArrangements.numPrimeArrangements(100));
  //       MinimumAbsDifference.minimumAbsDifference(new int[]{4,2,1,3});
  //       MiddleNode.middleNode(ListNode.creatListNode());
-        IsMonotonic.isMonotonic(new int[]{1, 2, 2, 3});
+ //       IsMonotonic.isMonotonic(new int[]{1, 2, 2, 3});
+        IsLongPressedName.isLongPressedName("saeed", "ssaaedd");
     }
 }
