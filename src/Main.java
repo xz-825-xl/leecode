@@ -142,6 +142,7 @@ public class Main {
  //       IsMonotonic.isMonotonic(new int[]{1, 2, 2, 3});
  //       IsLongPressedName.isLongPressedName("saeed", "ssaaedd");
  //       LargestPerimeter.largestPerimeter(new int[]{3,2,3,4});
-        FloodFill.floodFill(new int[][]{{1,1,1},{1,1,0},{1,0,1}}, 1,1 , 2);
+        // FloodFill.floodFill(new int[][]{{1,1,1},{1,1,0},{1,0,1}}, 1,1 , 2);
+        FairCandySwap.fairCandySwap(new int[]{1, 1}, new int[]{2, 2});
     }
 }
