@@ -143,6 +143,7 @@ public class Main {
  //       IsLongPressedName.isLongPressedName("saeed", "ssaaedd");
  //       LargestPerimeter.largestPerimeter(new int[]{3,2,3,4});
         // FloodFill.floodFill(new int[][]{{1,1,1},{1,1,0},{1,0,1}}, 1,1 , 2);
-        FairCandySwap.fairCandySwap(new int[]{1, 1}, new int[]{2, 2});
+        //FairCandySwap.fairCandySwap(new int[]{1, 1}, new int[]{2, 2});
+        TwoCitySchedCost.twoCitySchedCost(new int[][]{{518,518},{71,971},{121,862},{967,607},{138,754},{513,337},{499,873},{337,387},{647,917},{76,417}});
     }
 }
