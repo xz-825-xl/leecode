@@ -146,6 +146,7 @@ public class Main {
         // FloodFill.floodFill(new int[][]{{1,1,1},{1,1,0},{1,0,1}}, 1,1 , 2);
         //FairCandySwap.fairCandySwap(new int[]{1, 1}, new int[]{2, 2});
         //TwoCitySchedCost.twoCitySchedCost(new int[][]{{518,518},{71,971},{121,862},{967,607},{138,754},{513,337},{499,873},{337,387},{647,917},{76,417}});
-        SumRootToLeaf.sumRootToLeaf(TreeNode.createTreeNodes());
+ //       SumRootToLeaf.sumRootToLeaf(TreeNode.createTreeNodes());
+        FindRadius.findRadius(new int[]{1,2 ,3}, new int[]{2});
     }
 }
