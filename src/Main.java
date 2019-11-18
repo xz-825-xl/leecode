@@ -150,6 +150,7 @@ public class Main {
  //       SumRootToLeaf.sumRootToLeaf(TreeNode.createTreeNodes());
 //        FindRadius.findRadius(new int[]{1,2 ,3}, new int[]{2});
 //        GcdOfStrings.gcdOfStrings("ABABABAB", "ABAB");
-        SurfaceArea.surfaceArea(new int[][]{{1, 0},{0, 2}});
+ //       SurfaceArea.surfaceArea(new int[][]{{1, 0},{0, 2}});
+        OddCells.oddCells(2, 3, new int[][]{{0, 1},{1, 1}});
     }
 }
