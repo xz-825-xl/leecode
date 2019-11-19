@@ -151,6 +151,7 @@ public class Main {
 //        FindRadius.findRadius(new int[]{1,2 ,3}, new int[]{2});
 //        GcdOfStrings.gcdOfStrings("ABABABAB", "ABAB");
  //       SurfaceArea.surfaceArea(new int[][]{{1, 0},{0, 2}});
-        OddCells.oddCells(2, 3, new int[][]{{0, 1},{1, 1}});
+ //       OddCells.oddCells(2, 3, new int[][]{{0, 1},{1, 1}});
+        ShiftGrid.shiftGrid(new int[][]{{1,2,3},{4,5,6},{7,8,9}}, 9);
     }
 }
