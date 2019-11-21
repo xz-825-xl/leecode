@@ -15,6 +15,7 @@ import number.GetHint;
 import number.NumPrimeArrangements;
 import number.ReachNumber;
 import number.RotatedDigits;
+import number.Tribonacci;
 import str.CountBinarySubstrings;
 import str.GcdOfStrings;
 import str.IsLongPressedName;
@@ -152,6 +153,7 @@ public class Main {
 //        GcdOfStrings.gcdOfStrings("ABABABAB", "ABAB");
  //       SurfaceArea.surfaceArea(new int[][]{{1, 0},{0, 2}});
  //       OddCells.oddCells(2, 3, new int[][]{{0, 1},{1, 1}});
-        ShiftGrid.shiftGrid(new int[][]{{1,2,3},{4,5,6},{7,8,9}}, 9);
+ //       ShiftGrid.shiftGrid(new int[][]{{1,2,3},{4,5,6},{7,8,9}}, 9);
+        Tribonacci.tribonacci(34);
     }
 }
