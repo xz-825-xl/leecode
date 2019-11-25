@@ -155,7 +155,7 @@ public class Main {
  //       OddCells.oddCells(2, 3, new int[][]{{0, 1},{1, 1}});
  //       ShiftGrid.shiftGrid(new int[][]{{1,2,3},{4,5,6},{7,8,9}}, 9);
 //        Tribonacci.tribonacci(34);
-        LargestSumAfterKNegations.largestSumAfterKNegations(new int[]{-8,3,-5,-3,-5,-2}, 6);
-        LargestSumAfterKNegations.largestSumAfterKNegations(new int[]{4,4,-9,2,1,7,5,8}, 3);
+//        LargestSumAfterKNegations.largestSumAfterKNegations(new int[]{-8,3,-5,-3,-5,-2}, 6);
+//        LargestSumAfterKNegations.largestSumAfterKNegations(new int[]{4,4,-9,2,1,7,5,8}, 3);
     }
 }
