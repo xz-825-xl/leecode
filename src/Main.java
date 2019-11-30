@@ -157,6 +157,8 @@ public class Main {
 //        Tribonacci.tribonacci(34);
 //        LargestSumAfterKNegations.largestSumAfterKNegations(new int[]{-8,3,-5,-3,-5,-2}, 6);
 //        LargestSumAfterKNegations.largestSumAfterKNegations(new int[]{4,4,-9,2,1,7,5,8}, 3);
-        PeakIndexInMountainArray.peakIndexInMountainArray(new int[]{18,29,38,59,98,100,99,98,90});
+//        PeakIndexInMountainArray.peakIndexInMountainArray(new int[]{18,29,38,59,98,100,99,98,90});
+//        ImageSmoother.imageSmoother(new int[][]{{1,1,1},{1,0,1},{1,1,1}});
+        ImageSmoother.imageSmoother(new int[][]{{1}});
     }
 }
