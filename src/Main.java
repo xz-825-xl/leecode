@@ -159,6 +159,7 @@ public class Main {
 //        LargestSumAfterKNegations.largestSumAfterKNegations(new int[]{4,4,-9,2,1,7,5,8}, 3);
 //        PeakIndexInMountainArray.peakIndexInMountainArray(new int[]{18,29,38,59,98,100,99,98,90});
 //        ImageSmoother.imageSmoother(new int[][]{{1,1,1},{1,0,1},{1,1,1}});
-        ImageSmoother.imageSmoother(new int[][]{{1}});
+//        ImageSmoother.imageSmoother(new int[][]{{1}});
+        Tictactoe.tictactoe(new int[][]{{0,0},{1,1},{2,0},{1,0},{1,2},{2,1},{0,1},{0,2},{2,2}});
     }
 }
