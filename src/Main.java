@@ -160,6 +160,9 @@ public class Main {
 //        PeakIndexInMountainArray.peakIndexInMountainArray(new int[]{18,29,38,59,98,100,99,98,90});
 //        ImageSmoother.imageSmoother(new int[][]{{1,1,1},{1,0,1},{1,1,1}});
 //        ImageSmoother.imageSmoother(new int[][]{{1}});
-        Tictactoe.tictactoe(new int[][]{{0,0},{1,1},{2,0},{1,0},{1,2},{2,1},{0,1},{0,2},{2,2}});
+ //       Tictactoe.tictactoe(new int[][]{{0,0},{1,1},{2,0},{1,0},{1,2},{2,1},{0,1},{0,2},{2,2}});
+ //       IsAlienSorted.isAlienSorted(new String[]{"word","world","row"}, "worldabcefghijkmnpqstuvxyz");
+ //       IsAlienSorted.isAlienSorted(new String[]{"hello","leetcode"},"hlabcdefgijkmnopqrstuvwxyz");
+        IsAlienSorted.isAlienSorted(new String[]{"fxasxpc","dfbdrifhp","nwzgs","cmwqriv","ebulyfyve","miracx","sxckdwzv","dtijzluhts","wwbmnge","qmjwymmyox"}, "zkgwaverfimqxbnctdplsjyohu");
     }
 }
