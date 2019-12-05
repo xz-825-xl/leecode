@@ -25,6 +25,7 @@ import str.RemoveOuterParentheses;
 import tree.DiameterOfBinaryTree;
 import tree.SortedArrayToBST;
 import tree.SumRootToLeaf;
+import tree.Tree2str;
 
 public class Main {
 
@@ -163,6 +164,7 @@ public class Main {
  //       Tictactoe.tictactoe(new int[][]{{0,0},{1,1},{2,0},{1,0},{1,2},{2,1},{0,1},{0,2},{2,2}});
  //       IsAlienSorted.isAlienSorted(new String[]{"word","world","row"}, "worldabcefghijkmnpqstuvxyz");
  //       IsAlienSorted.isAlienSorted(new String[]{"hello","leetcode"},"hlabcdefgijkmnopqrstuvwxyz");
-        IsAlienSorted.isAlienSorted(new String[]{"fxasxpc","dfbdrifhp","nwzgs","cmwqriv","ebulyfyve","miracx","sxckdwzv","dtijzluhts","wwbmnge","qmjwymmyox"}, "zkgwaverfimqxbnctdplsjyohu");
+ //       IsAlienSorted.isAlienSorted(new String[]{"fxasxpc","dfbdrifhp","nwzgs","cmwqriv","ebulyfyve","miracx","sxckdwzv","dtijzluhts","wwbmnge","qmjwymmyox"}, "zkgwaverfimqxbnctdplsjyohu");
+        Tree2str.tree2str(TreeNode.createTreeNodes());
     }
 }
