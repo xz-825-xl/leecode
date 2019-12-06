@@ -165,6 +165,6 @@ public class Main {
  //       IsAlienSorted.isAlienSorted(new String[]{"word","world","row"}, "worldabcefghijkmnpqstuvxyz");
  //       IsAlienSorted.isAlienSorted(new String[]{"hello","leetcode"},"hlabcdefgijkmnopqrstuvwxyz");
  //       IsAlienSorted.isAlienSorted(new String[]{"fxasxpc","dfbdrifhp","nwzgs","cmwqriv","ebulyfyve","miracx","sxckdwzv","dtijzluhts","wwbmnge","qmjwymmyox"}, "zkgwaverfimqxbnctdplsjyohu");
-        Tree2str.tree2str(TreeNode.createTreeNodes());
+ //       Tree2str.tree2str(TreeNode.createTreeNodes());
     }
 }
