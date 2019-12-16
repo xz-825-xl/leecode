@@ -49,16 +49,16 @@ public class TreeNode {
     public static TreeNode createTreeNodes() {
         TreeNode treeNode = new TreeNode(1);
         TreeNode treeNode2 = new TreeNode(2);
-        TreeNode treeNode3 = new TreeNode(3);
-        TreeNode treeNode4 = new TreeNode(4);
-//        TreeNode treeNode5 = new TreeNode(1);
-//        TreeNode treeNode11 = new TreeNode(0);
+        TreeNode treeNode3 = new TreeNode(1);
+        TreeNode treeNode4 = new TreeNode(2);
+        TreeNode treeNode5 = new TreeNode(1);
+        TreeNode treeNode11 = new TreeNode(2);
 //        TreeNode treeNode6 = new TreeNode(1);
-        treeNode.left = treeNode2;
-        treeNode.right = treeNode3;
-        treeNode2.left= treeNode4;
-//        treeNode2.right = treeNode5;
-//        treeNode3.left = treeNode11;
+        treeNode.right = treeNode2;
+        treeNode2.left = treeNode3;
+        treeNode3.right= treeNode4;
+        treeNode4.left = treeNode5;
+        treeNode5.right = treeNode11;
 //        treeNode3.right = treeNode6;
         return treeNode;
     }

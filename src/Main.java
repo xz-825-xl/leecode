@@ -23,6 +23,7 @@ import str.NumberOfLines;
 import str.RemoveDuplicates;
 import str.RemoveOuterParentheses;
 import tree.DiameterOfBinaryTree;
+import tree.FindMode;
 import tree.IsCousins;
 import tree.SortedArrayToBST;
 import tree.SumRootToLeaf;
@@ -167,6 +168,7 @@ public class Main {
  //       IsAlienSorted.isAlienSorted(new String[]{"hello","leetcode"},"hlabcdefgijkmnopqrstuvwxyz");
  //       IsAlienSorted.isAlienSorted(new String[]{"fxasxpc","dfbdrifhp","nwzgs","cmwqriv","ebulyfyve","miracx","sxckdwzv","dtijzluhts","wwbmnge","qmjwymmyox"}, "zkgwaverfimqxbnctdplsjyohu");
  //       Tree2str.tree2str(TreeNode.createTreeNodes());
-        IsCousins.isCousins(TreeNode.createTreeNodes(), 2, 3);
+ //       IsCousins.isCousins(TreeNode.createTreeNodes(), 2, 3);
+        FindMode.findMode(TreeNode.createTreeNodes());
     }
 }
