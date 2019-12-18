@@ -29,6 +29,10 @@ import tree.SortedArrayToBST;
 import tree.SumRootToLeaf;
 import tree.Tree2str;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -169,6 +173,9 @@ public class Main {
  //       IsAlienSorted.isAlienSorted(new String[]{"fxasxpc","dfbdrifhp","nwzgs","cmwqriv","ebulyfyve","miracx","sxckdwzv","dtijzluhts","wwbmnge","qmjwymmyox"}, "zkgwaverfimqxbnctdplsjyohu");
  //       Tree2str.tree2str(TreeNode.createTreeNodes());
  //       IsCousins.isCousins(TreeNode.createTreeNodes(), 2, 3);
-        FindMode.findMode(TreeNode.createTreeNodes());
+//        FindMode.findMode(TreeNode.createTreeNodes());
+        List<Integer> list = new ArrayList<>();
+        list = Collections.unmodifiableList(list);
+        list.add(1);
     }
 }
