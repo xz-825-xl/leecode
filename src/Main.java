@@ -29,6 +29,7 @@ import tree.SortedArrayToBST;
 import tree.SumRootToLeaf;
 import tree.Tree2str;
 
+import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -88,8 +89,8 @@ public class Main {
 //        obj.addAtTail(0);
 //        obj.deleteAtIndex(6);
 //        MergeTwoLists.mergeTwoLists(ListNode.creatListNode(), ListNode.creatListNode2());
-        int[] ints1 = {-1, 0};
-        int[] ints2 = {0, 4, 0, 3, 2};
+//        int[] ints1 = {-1, 0};
+//        int[] ints2 = {0, 4, 0, 3, 2};
 //        int[] ints2 = {5,6,7,8};
 //        FindContentChildren.findContentChildren(ints1, ints2);
 //        LastStoneWeight.lastStoneWeight(ints1);
@@ -111,10 +112,10 @@ public class Main {
 //        char[] chars = {'c','f','j'};
 //        NextGreatestLetter.nextGreatestLetter2(chars, 'j');
 //        ConvertToTitle.convertToTitle(26);
-        int[] ins1 = {10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10};
-        int[] ins2 = {2, 3};
-        int[] ins3 = {3, 1};
-        int[][] array = {ins1, ins2, ins3};
+//        int[] ins1 = {10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10};
+//        int[] ins2 = {2, 3};
+//        int[] ins3 = {3, 1};
+//        int[][] array = {ins1, ins2, ins3};
 //        GardenNoAdj.gardenNoAdj2(3, array);
 //        BinaryGap.binaryGap(22);
 //        NumberOfLines.numberOfLines(ins1, "abcdefghijklmnopqrstuvwxyz");
@@ -132,7 +133,7 @@ public class Main {
 //        OrangesRotting.orangesRotting(new int[][]{{2,1,1},{1,1,0},{0,1,1}});
 //        SumEvenAfterQueries.sumEvenAfterQueries(new int[]{1, 2, 3, 4}, new int[][]{{1,0},{-3,1},{-4,0},{2,3}});
 //   RelativeSortArray.relativeSortArray(new int[]{2,3,1,3,2,4,6,7,9,2,19}, new int[]{2,1,4,3,9,6});
-        TreeNode treeNode = TreeNode.createTreeNodes();
+//        TreeNode treeNode = TreeNode.createTreeNodes();
 //        DiameterOfBinaryTree.diameterOfBinaryTree(treeNode);
 //        BitwiseComplement.bitwiseComplement(0);
 //        CommonChars.commonChars(new String[]{"bella", "label", "roller"});
@@ -174,8 +175,18 @@ public class Main {
  //       Tree2str.tree2str(TreeNode.createTreeNodes());
  //       IsCousins.isCousins(TreeNode.createTreeNodes(), 2, 3);
 //        FindMode.findMode(TreeNode.createTreeNodes());
-        List<Integer> list = new ArrayList<>();
-        list = Collections.unmodifiableList(list);
-        list.add(1);
+        String myStr = new StringBuilder("aabbccdd").toString();
+        String h ="aabbccdd";
+        String s = "aabb" + "ccdd";
+        String s1 = new String("aabbccdd");
+        String s2 = new String("aabbccdd");
+        String s3 = new StringBuilder("aabb").append("ccdd").toString();
+        System.out.println(s == h);// true
+        System.out.println(myStr ==h);//false
+        System.out.println(myStr == s3);//false
+        System.out.println(s1 == s2);//false
+        System.out.println(s1 == s3);//false
+
+        FindMaxAverage.class.getConstructors();
     }
 }
