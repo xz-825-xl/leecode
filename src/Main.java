@@ -1,39 +1,3 @@
-import array.*;
-import bit.BinaryGap;
-import bit.BitwiseComplement;
-import bit.FindComplement;
-import bit.HasAlternatingBits;
-import entity.ListNode;
-import entity.TreeNode;
-import list.MergeTwoLists;
-import list.MiddleNode;
-import list.MyLinkedList;
-import number.CheckPerfectNumber;
-import number.ConvertToTitle;
-import number.DayOfYear;
-import number.GetHint;
-import number.NumPrimeArrangements;
-import number.ReachNumber;
-import number.RotatedDigits;
-import number.Tribonacci;
-import str.CountBinarySubstrings;
-import str.GcdOfStrings;
-import str.IsLongPressedName;
-import str.NumberOfLines;
-import str.RemoveDuplicates;
-import str.RemoveOuterParentheses;
-import tree.DiameterOfBinaryTree;
-import tree.FindMode;
-import tree.IsCousins;
-import tree.SortedArrayToBST;
-import tree.SumRootToLeaf;
-import tree.Tree2str;
-
-import java.lang.reflect.Constructor;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -143,50 +107,53 @@ public class Main {
 //        InvalidTransactions.invalidTransactions(new String[]{"alex,676,260,bangkok","bob,656,1366,bangkok","alex,393,616,bangkok","bob,820,990,amsterdam","alex,596,1390,amsterdam"});
 //        GetHint.getHint("1807","7810");
 //        HeightChecker.heightChecker(new int[]{1,2,2,2,2,2,1,2,2,1});
- //       DistanceBetweenBusStops.distanceBetweenBusStops(new int[]{1,2,3,4}, 0, 3);
- //       DayOfYear.dayOfYear("2004-03-01");
- //       CountCharacters.countCharacters(new String[]{"cat","bt","hat","tree"}, "atach");
- //         DuplicateZeros.duplicateZeros3(new int[]{8,4,5,0,0,0,0,7});
- //       System.out.println(NumPrimeArrangements.numPrimeArrangements(100));
- //       MinimumAbsDifference.minimumAbsDifference(new int[]{4,2,1,3});
- //       MiddleNode.middleNode(ListNode.creatListNode());
- //       IsMonotonic.isMonotonic(new int[]{1, 2, 2, 3});
- //       IsLongPressedName.isLongPressedName("saeed", "ssaaedd");
- //       LargestPerimeter.largestPerimeter(new int[]{3,2,3,4});
+        //       DistanceBetweenBusStops.distanceBetweenBusStops(new int[]{1,2,3,4}, 0, 3);
+        //       DayOfYear.dayOfYear("2004-03-01");
+        //       CountCharacters.countCharacters(new String[]{"cat","bt","hat","tree"}, "atach");
+        //         DuplicateZeros.duplicateZeros3(new int[]{8,4,5,0,0,0,0,7});
+        //       System.out.println(NumPrimeArrangements.numPrimeArrangements(100));
+        //       MinimumAbsDifference.minimumAbsDifference(new int[]{4,2,1,3});
+        //       MiddleNode.middleNode(ListNode.creatListNode());
+        //       IsMonotonic.isMonotonic(new int[]{1, 2, 2, 3});
+        //       IsLongPressedName.isLongPressedName("saeed", "ssaaedd");
+        //       LargestPerimeter.largestPerimeter(new int[]{3,2,3,4});
         // FloodFill.floodFill(new int[][]{{1,1,1},{1,1,0},{1,0,1}}, 1,1 , 2);
         //FairCandySwap.fairCandySwap(new int[]{1, 1}, new int[]{2, 2});
         //TwoCitySchedCost.twoCitySchedCost(new int[][]{{518,518},{71,971},{121,862},{967,607},{138,754},{513,337},{499,873},{337,387},{647,917},{76,417}});
- //       SumRootToLeaf.sumRootToLeaf(TreeNode.createTreeNodes());
+        //       SumRootToLeaf.sumRootToLeaf(TreeNode.createTreeNodes());
 //        FindRadius.findRadius(new int[]{1,2 ,3}, new int[]{2});
 //        GcdOfStrings.gcdOfStrings("ABABABAB", "ABAB");
- //       SurfaceArea.surfaceArea(new int[][]{{1, 0},{0, 2}});
- //       OddCells.oddCells(2, 3, new int[][]{{0, 1},{1, 1}});
- //       ShiftGrid.shiftGrid(new int[][]{{1,2,3},{4,5,6},{7,8,9}}, 9);
+        //       SurfaceArea.surfaceArea(new int[][]{{1, 0},{0, 2}});
+        //       OddCells.oddCells(2, 3, new int[][]{{0, 1},{1, 1}});
+        //       ShiftGrid.shiftGrid(new int[][]{{1,2,3},{4,5,6},{7,8,9}}, 9);
 //        Tribonacci.tribonacci(34);
 //        LargestSumAfterKNegations.largestSumAfterKNegations(new int[]{-8,3,-5,-3,-5,-2}, 6);
 //        LargestSumAfterKNegations.largestSumAfterKNegations(new int[]{4,4,-9,2,1,7,5,8}, 3);
 //        PeakIndexInMountainArray.peakIndexInMountainArray(new int[]{18,29,38,59,98,100,99,98,90});
 //        ImageSmoother.imageSmoother(new int[][]{{1,1,1},{1,0,1},{1,1,1}});
 //        ImageSmoother.imageSmoother(new int[][]{{1}});
- //       Tictactoe.tictactoe(new int[][]{{0,0},{1,1},{2,0},{1,0},{1,2},{2,1},{0,1},{0,2},{2,2}});
- //       IsAlienSorted.isAlienSorted(new String[]{"word","world","row"}, "worldabcefghijkmnpqstuvxyz");
- //       IsAlienSorted.isAlienSorted(new String[]{"hello","leetcode"},"hlabcdefgijkmnopqrstuvwxyz");
- //       IsAlienSorted.isAlienSorted(new String[]{"fxasxpc","dfbdrifhp","nwzgs","cmwqriv","ebulyfyve","miracx","sxckdwzv","dtijzluhts","wwbmnge","qmjwymmyox"}, "zkgwaverfimqxbnctdplsjyohu");
- //       Tree2str.tree2str(TreeNode.createTreeNodes());
- //       IsCousins.isCousins(TreeNode.createTreeNodes(), 2, 3);
+        //       Tictactoe.tictactoe(new int[][]{{0,0},{1,1},{2,0},{1,0},{1,2},{2,1},{0,1},{0,2},{2,2}});
+        //       IsAlienSorted.isAlienSorted(new String[]{"word","world","row"}, "worldabcefghijkmnpqstuvxyz");
+        //       IsAlienSorted.isAlienSorted(new String[]{"hello","leetcode"},"hlabcdefgijkmnopqrstuvwxyz");
+        //       IsAlienSorted.isAlienSorted(new String[]{"fxasxpc","dfbdrifhp","nwzgs","cmwqriv","ebulyfyve","miracx","sxckdwzv","dtijzluhts","wwbmnge","qmjwymmyox"}, "zkgwaverfimqxbnctdplsjyohu");
+        //       Tree2str.tree2str(TreeNode.createTreeNodes());
+        //       IsCousins.isCousins(TreeNode.createTreeNodes(), 2, 3);
 //        FindMode.findMode(TreeNode.createTreeNodes());
-        String myStr = new StringBuilder("aabbccdd").toString();
-        String h ="aabbccdd";
-        String s = "aabb" + "ccdd";
-        String s1 = new String("aabbccdd");
-        String s2 = new String("aabbccdd");
-        String s3 = new StringBuilder("aabb").append("ccdd").toString();
-        System.out.println(s == h);// true
-        System.out.println(myStr ==h);//false
-        System.out.println(myStr == s3);//false
-        System.out.println(s1 == s2);//false
-        System.out.println(s1 == s3);//false
-
-        FindMaxAverage.class.getConstructors();
+//        String myStr = new StringBuilder("aabbccdd").toString();
+//        String h ="aabbccdd";
+//        String s = "aabb" + "ccdd";
+//        String s1 = new String("aabbccdd");
+//        String s2 = new String("aabbccdd");
+//        String s3 = new StringBuilder("aabb").append("ccdd").toString();
+//        System.out.println(s == h);// true
+//        System.out.println(myStr ==h);//false
+//        System.out.println(myStr == s3);//false
+//        System.out.println(s1 == s2);//false
+//        System.out.println(s1 == s3);//false
+        int a = 128;
+        Integer b = Integer.valueOf(127);
+        Integer c = Integer.valueOf(127);
+       // Integer b = new Integer(1);
+        System.out.println(b == c);
     }
 }
