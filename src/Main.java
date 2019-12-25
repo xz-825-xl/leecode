@@ -1,3 +1,6 @@
+import entity.TreeNode;
+import tree.IsSubtree;
+
 import java.util.Collections;
 
 public class Main {
@@ -152,10 +155,12 @@ public class Main {
 //        System.out.println(myStr == s3);//false
 //        System.out.println(s1 == s2);//false
 //        System.out.println(s1 == s3);//false
-        int a = 128;
-        Integer b = Integer.valueOf(127);
-        Integer c = Integer.valueOf(127);
-       // Integer b = new Integer(1);
-        System.out.println(b == c);
+//        int a = 128;
+//        Integer b = Integer.valueOf(127);
+//        Integer c = Integer.valueOf(127);
+//       // Integer b = new Integer(1);
+//        System.out.println(b == c);
+
+        IsSubtree.isSubtree(TreeNode.createTreeNodes(), TreeNode.createTreeNodes2());
     }
 }
