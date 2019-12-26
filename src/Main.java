@@ -1,4 +1,5 @@
 import entity.TreeNode;
+import number.FindNumbers;
 import tree.IsSubtree;
 
 import java.util.Collections;
@@ -161,6 +162,7 @@ public class Main {
 //       // Integer b = new Integer(1);
 //        System.out.println(b == c);
 
-        IsSubtree.isSubtree(TreeNode.createTreeNodes(), TreeNode.createTreeNodes2());
+//        IsSubtree.isSubtree(TreeNode.createTreeNodes(), TreeNode.createTreeNodes2());
+        FindNumbers.findNumbers(new int[]{12,345,2,6,7896});
     }
 }
