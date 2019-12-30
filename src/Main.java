@@ -1,6 +1,7 @@
 import entity.TreeNode;
 import number.FindNumbers;
 import tree.IsSubtree;
+import tree.LongestUnivaluePath;
 
 import java.util.Collections;
 
@@ -163,6 +164,7 @@ public class Main {
 //        System.out.println(b == c);
 
 //        IsSubtree.isSubtree(TreeNode.createTreeNodes(), TreeNode.createTreeNodes2());
-        FindNumbers.findNumbers(new int[]{12,345,2,6,7896});
+//        FindNumbers.findNumbers(new int[]{12,345,2,6,7896});
+        LongestUnivaluePath.longestUnivaluePath(TreeNode.createTreeNodes());
     }
 }

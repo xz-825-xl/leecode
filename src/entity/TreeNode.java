@@ -47,26 +47,32 @@ public class TreeNode {
     }
 
     public static TreeNode createTreeNodes() {
-        TreeNode treeNode = new TreeNode(3);
+        TreeNode treeNode = new TreeNode(5);
         TreeNode treeNode2 = new TreeNode(4);
         TreeNode treeNode3 = new TreeNode(5);
         TreeNode treeNode4 = new TreeNode(1);
-        TreeNode treeNode5 = new TreeNode(2);
-//        TreeNode treeNode6 = new TreeNode(1);
+        TreeNode treeNode5 = new TreeNode(1);
+        TreeNode treeNode6 = new TreeNode(5);
         treeNode.left = treeNode2;
         treeNode.right = treeNode3;
         treeNode2.left = treeNode4;
         treeNode2.right = treeNode5;
-//        treeNode3.right = treeNode6;
+        treeNode3.right = treeNode6;
         return treeNode;
     }
 
     public static TreeNode createTreeNodes2() {
+        TreeNode treeNode = new TreeNode(1);
         TreeNode treeNode2 = new TreeNode(4);
-        TreeNode treeNode4 = new TreeNode(1);
-        TreeNode treeNode5 = new TreeNode(2);
+        TreeNode treeNode3 = new TreeNode(5);
+        TreeNode treeNode4 = new TreeNode(4);
+        TreeNode treeNode5 = new TreeNode(4);
+        TreeNode treeNode6 = new TreeNode(5);
+        treeNode.left = treeNode2;
+        treeNode.right = treeNode3;
         treeNode2.left = treeNode4;
         treeNode2.right = treeNode5;
-        return treeNode2;
+        treeNode3.left = treeNode6;
+        return treeNode;
     }
 }
