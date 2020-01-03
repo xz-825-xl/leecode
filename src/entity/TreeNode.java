@@ -49,30 +49,28 @@ public class TreeNode {
     public static TreeNode createTreeNodes() {
         TreeNode treeNode = new TreeNode(5);
         TreeNode treeNode2 = new TreeNode(4);
-        TreeNode treeNode3 = new TreeNode(5);
-        TreeNode treeNode4 = new TreeNode(1);
-        TreeNode treeNode5 = new TreeNode(1);
-        TreeNode treeNode6 = new TreeNode(5);
+        TreeNode treeNode3 = new TreeNode(8);
+        TreeNode treeNode4 = new TreeNode(11);
+        TreeNode treeNode5 = new TreeNode(13);
+        TreeNode treeNode6 = new TreeNode(4);
+        TreeNode treeNode7 = new TreeNode(7);
+        TreeNode treeNode8 = new TreeNode(2);
+        TreeNode treeNode9 = new TreeNode(1);
         treeNode.left = treeNode2;
         treeNode.right = treeNode3;
         treeNode2.left = treeNode4;
-        treeNode2.right = treeNode5;
+        treeNode4.left = treeNode7;
+        treeNode4.right = treeNode8;
+        treeNode3.left = treeNode5;
         treeNode3.right = treeNode6;
+        treeNode6.right = treeNode9;
         return treeNode;
     }
 
     public static TreeNode createTreeNodes2() {
-        TreeNode treeNode = new TreeNode(1);
-        TreeNode treeNode2 = new TreeNode(4);
-        TreeNode treeNode3 = new TreeNode(5);
-        TreeNode treeNode4 = new TreeNode(4);
-        TreeNode treeNode5 = new TreeNode(4);
-        TreeNode treeNode6 = new TreeNode(5);
-        treeNode.left = treeNode2;
-        treeNode.right = treeNode3;
-        treeNode2.left = treeNode4;
-        treeNode2.right = treeNode5;
-        treeNode3.left = treeNode6;
+        TreeNode treeNode = new TreeNode(-2);
+        TreeNode treeNode2 = new TreeNode(-3);
+        treeNode.right = treeNode2;
         return treeNode;
     }
 }
