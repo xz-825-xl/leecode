@@ -1,12 +1,4 @@
-import entity.TreeNode;
-import number.FindNumbers;
-import number.SubtractProductAndSum;
-import tree.FindTarget;
-import tree.HasPathSum;
-import tree.IsSubtree;
-import tree.LongestUnivaluePath;
-
-import java.util.Collections;
+import array.FindPairs;
 
 public class Main {
 
@@ -171,6 +163,11 @@ public class Main {
 //        LongestUnivaluePath.longestUnivaluePath(TreeNode.createTreeNodes());
 //        SubtractProductAndSum.subtractProductAndSum(234);
 //        HasPathSum.hasPathSum(TreeNode.createTreeNodes2(), -5);
-        FindTarget.findTarget(TreeNode.createTreeNodes(), 4);
+//        FindTarget.findTarget(TreeNode.createTreeNodes(), 4);
+//        FindPairs.findPairs3(new int[]{3, 1, 4, 1, 5}, 2);// 2
+//        FindPairs.findPairs3(new int[]{1, 2, 3, 4, 5}, 2);// 3
+//        FindPairs.findPairs3(new int[]{1, 3, 1, 5, 4}, 0);//1
+        //       FindPairs.findPairs3(new int[]{0}, 0);//0
+        FindPairs.findPairs3(new int[]{6, 2, 9, 3, 9, 6, 7, 7, 6, 4}, 3);
     }
 }
