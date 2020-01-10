@@ -1,4 +1,5 @@
 import array.FindPairs;
+import array.FindSpecialInteger;
 
 public class Main {
 
@@ -168,6 +169,7 @@ public class Main {
 //        FindPairs.findPairs3(new int[]{1, 2, 3, 4, 5}, 2);// 3
 //        FindPairs.findPairs3(new int[]{1, 3, 1, 5, 4}, 0);//1
         //       FindPairs.findPairs3(new int[]{0}, 0);//0
-        FindPairs.findPairs3(new int[]{6, 2, 9, 3, 9, 6, 7, 7, 6, 4}, 3);
+//        FindPairs.findPairs3(new int[]{6, 2, 9, 3, 9, 6, 7, 7, 6, 4}, 3);
+        FindSpecialInteger.findSpecialInteger2(new int[]{1,2,2,6,6,6,6,7,10});
     }
 }
