@@ -48,40 +48,42 @@ public class NumArray {
     public static void main(String[] args) {
         //minFlips(8, 3, 5);
         //makeConnected(6, new int[][]{{0,1},{0,2},{0,3},{1,2},{1,3}});//2
-        makeConnected(5, new int[][]{{0,1},{0,2},{3, 4},{2,3}});//0
+        makeConnected(5, new int[][]{{0, 1}, {0, 2}, {3, 4}, {2, 3}});//0
 
     }
 
-//    11
+    //    11
 //            [[1,4],[0,3],[1,3],[3,7],[2,7],[0,1],[2,4],[3,6],[5,6],[6,7],[4,7],[0,7],[5,7]]   //3
-    public static int makeConnected(int n, int[][] connections) {
-        if (connections.length < n - 1) {
-            return -1;
-        }
-        Map<Integer, Set<Integer>> map = new HashMap<>();
-        for (int i = 0; i < connections.length; i++) {
-            Set<Integer> set = map.getOrDefault(connections[i][0], new HashSet<>());
-            set.add(connections[i][1]);
-            map.putIfAbsent(connections[i][0], set);
-        }
-        int maxLength = Integer.MIN_VALUE;
-        for (Map.Entry<Integer, Set<Integer>> entry : map.entrySet()) {
-            Set<Integer> set = new HashSet<>();
-            getSet(map, entry.getValue(), set);
-            entry.getValue().addAll(set);
-            maxLength = Math.max(maxLength, entry.getValue().size());
-        }
+    static int[] father;
 
-        return n - 1 - maxLength;
+    static int find(int x) {
+        if (father[x] == x) return x;
+        return father[x] = find(father[x]);
     }
 
-    private static void getSet(Map<Integer, Set<Integer>> map, Set<Integer> set, Set<Integer> restoreSet){
-        if(set.isEmpty()){
+    public static int makeConnected(int n, int[][] connections) {
+        if (connections.length < n - 1) return -1;
+        father = new int[n];
+        for (int i = 0; i < n; i++) father[i] = i;
+        for (int i = 0; i < connections.length; i++) {
+            int a = connections[i][0];
+            int b = connections[i][1];
+            int fa = find(a);
+            int fb = find(b);
+            father[fa] = fb;
+        }
+        int res = -1;
+        for (int i = 0; i < n; i++) if (father[i] == i) res++;
+        return res;
+    }
+
+    private static void getSet(Map<Integer, Set<Integer>> map, Set<Integer> set, Set<Integer> restoreSet) {
+        if (set.isEmpty()) {
             return;
         }
-        for (Integer num: set) {
+        for (Integer num : set) {
             Set<Integer> temp = map.getOrDefault(num, new HashSet<>());
-            if(!temp.isEmpty()) {
+            if (!temp.isEmpty()) {
                 getSet(map, temp, restoreSet);
             }
             restoreSet.addAll(temp);
