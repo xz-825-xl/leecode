@@ -1,5 +1,6 @@
 import array.FindPairs;
 import array.FindSpecialInteger;
+import array.MakeConnected;
 import str.FreqAlphabets;
 
 public class Main {
@@ -173,6 +174,8 @@ public class Main {
 //        FindPairs.findPairs3(new int[]{6, 2, 9, 3, 9, 6, 7, 7, 6, 4}, 3);
 //        FindSpecialInteger.findSpecialInteger2(new int[]{1,2,2,6,6,6,6,7,10});
  //       FreqAlphabets.freqAlphabets("12345678910#11#12#13#14#15#16#17#18#19#20#21#22#23#24#25#26#");
-        FreqAlphabets.freqAlphabets2("10#11#12");
+ //       FreqAlphabets.freqAlphabets2("10#11#12");
+ //       MakeConnected.makeConnected(4, new int[][]{{0,1},{0,2},{1,2}});
+        MakeConnected.makeConnected(8, new int[][]{{0,6},{2,3},{2,6},{2,7},{1,7},{2,4},{3,5},{0,2}});
     }
 }

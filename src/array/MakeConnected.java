@@ -9,7 +9,7 @@ public class MakeConnected {
     private static int[] father;
 
     public static int makeConnected(int n, int[][] connections) {
-        if (n - 1 < connections.length) {
+        if (n - 1 > connections.length) {
             return -1;
         }
         int count = 0;
@@ -18,7 +18,7 @@ public class MakeConnected {
             father[i] = i;
         }
         for (int i = 0; i < connections.length; i++) {
-            father[connections[i][0]] = connections[i][1];
+            union(connections[i][0], connections[i][1]);
         }
         for (int i = 0; i < n; i++) {
             if (findFather(i) == i) {
@@ -28,11 +28,24 @@ public class MakeConnected {
         return count - 1;
     }
 
-    private static int findFather(int i) {
+    //递归找到 i 的头结点
+    public static int findFather(int i) {
         if (father[i] == i) {
             return i;
         } else {
-            return father[father[i]];
+            father[i] = findFather(father[i]);
+            return father[i];
+        }
+    }
+
+    //将连个节点连在一起
+    public static void union(int a, int b) {
+        int i = findFather(a);
+        int j = findFather(b);
+        if (i != j) {
+            father[i] = j;//选一个点作为共同的父节点
         }
     }
 }
+
+
