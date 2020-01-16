@@ -1,4 +1,5 @@
 import array.NextGreaterElements;
+import array.ValidMountainArray;
 
 public class Main {
 
@@ -174,6 +175,7 @@ public class Main {
         //       FreqAlphabets.freqAlphabets2("10#11#12");
         //       MakeConnected.makeConnected(4, new int[][]{{0,1},{0,2},{1,2}});
 //        MakeConnected.makeConnected(8, new int[][]{{0,6},{2,3},{2,6},{2,7},{1,7},{2,4},{3,5},{0,2}});
-        NextGreaterElements.nextGreaterElements(new int[]{1, 2, 1});
+//        NextGreaterElements.nextGreaterElements2(new int[]{1, 2, 1});
+        ValidMountainArray.validMountainArray2(new int[]{14,82,89,84,79,70,70,68,67,66,63,60,58,54,44,43,32,28,26,25,22,15,13,12,10,8,7,5,4,3});
     }
 }
