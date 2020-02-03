@@ -1,5 +1,7 @@
+import array.ArrayRankTransform;
 import array.NextGreaterElements;
 import array.ValidMountainArray;
+import number.SingleNumber;
 
 public class Main {
 
@@ -176,6 +178,9 @@ public class Main {
         //       MakeConnected.makeConnected(4, new int[][]{{0,1},{0,2},{1,2}});
 //        MakeConnected.makeConnected(8, new int[][]{{0,6},{2,3},{2,6},{2,7},{1,7},{2,4},{3,5},{0,2}});
 //        NextGreaterElements.nextGreaterElements2(new int[]{1, 2, 1});
-        ValidMountainArray.validMountainArray2(new int[]{14,82,89,84,79,70,70,68,67,66,63,60,58,54,44,43,32,28,26,25,22,15,13,12,10,8,7,5,4,3});
+       // ValidMountainArray.validMountainArray2(new int[]{14,82,89,84,79,70,70,68,67,66,63,60,58,54,44,43,32,28,26,25,22,15,13,12,10,8,7,5,4,3});
+ //       SingleNumber.singleNumber(new int[]{2,2,3,2});
+        ArrayRankTransform.arrayRankTransform2(new int[]{40, 10, 20, 30});
+//        ArrayRankTransform.arrayRankTransform2(new int[]{100, 100, 100});
     }
 }
