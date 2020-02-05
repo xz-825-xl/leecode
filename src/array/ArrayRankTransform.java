@@ -29,6 +29,7 @@ public class ArrayRankTransform {
             return arr;
         }
         int[] rs = new int[arr.length];
+        int allMaxIndex = 0;
         for (int i = 0; i < arr.length; i++) {
             Integer maxIndex = i;
             for (int j = 0; j < arr.length; j++) {
@@ -39,22 +40,27 @@ public class ArrayRankTransform {
                 }
             }
             rs[i] = maxIndex;
+            if (arr[i] > arr[allMaxIndex]) {
+                allMaxIndex = i;
+            }
         }
         int[] count = new int[arr.length];
-        for (int i = 0; i < rs.length; i++) {
-            count(i, rs, count);
-        }
+        count(allMaxIndex, rs, count, arr);
         return count;
     }
 
-    private static void count(int index, int[] rs, int[] count) {
-        if (rs[index] == index) {
-            count[index] = 1;
-        } else if (count[rs[index]] == 0) {
-            count(rs[index], rs, count);
-            count[index] = count[rs[index]] + 1;
-        } else {
-            count[index] = count[rs[index]] + 1;
+    private static void count(int index, int[] rs, int[] count, int[] arr) {
+        int num = 1;
+        if (rs[index] != index) {
+            if (count[rs[index]] == 0) {
+                count(rs[index], rs, count, arr);
+            }
+            num = count[rs[index]] + 1;
+        }
+        for (int i = 0; i < rs.length; i++) {
+            if (arr[i] == arr[index]) {
+                count[i] = num;
+            }
         }
     }
 
