@@ -1,7 +1,9 @@
 import array.AllCellsDistOrder;
 import array.ArrayRankTransform;
+import array.DecompressRLElist;
 import array.NextGreaterElements;
 import array.ValidMountainArray;
+import number.Maximum69Number;
 import number.SingleNumber;
 
 public class Main {
@@ -183,6 +185,8 @@ public class Main {
  //       SingleNumber.singleNumber(new int[]{2,2,3,2});
   //      ArrayRankTransform.arrayRankTransform2(new int[]{40, 10, 20, 30});
    //     ArrayRankTransform.arrayRankTransform2(new int[]{100, 100, 100});
-        AllCellsDistOrder.allCellsDistOrder2(2, 2, 0, 1);
+   //     AllCellsDistOrder.allCellsDistOrder2(2, 2, 0, 1);
+   //     DecompressRLElist.decompressRLElist(new int[]{1, 2, 3, 4});
+        Maximum69Number.maximum69Number(9669);
     }
 }

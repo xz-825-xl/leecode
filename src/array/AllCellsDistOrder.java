@@ -96,4 +96,25 @@ public class AllCellsDistOrder {
         }
         return ans;
     }
+
+    public int[][] allCellsDistOrder3(int R, int C, int r0, int c0) {
+        int count = R * C, level = 1, num = 0;
+        int[][] ans = new int[count][2];
+        ans[num][0] = r0; ans[num++][1] = c0;
+        while(num < count) {
+            for (int i = 0; i <= level; i++) {
+                int j = level - i;
+                if (r0 + i < R ) {
+                    if (c0 + j < C) {ans[num][0] = r0 + i; ans[num++][1] = c0 + j;}
+                    if (c0 - j >= 0 && j != 0) {ans[num][0] = r0 + i; ans[num++][1] = c0 - j;}
+                }
+                if (r0 - i >= 0 && i != 0) {
+                    if (c0 + j < C) {ans[num][0] = r0 - i; ans[num++][1] = c0 + j;}
+                    if (c0 - j >= 0 && j != 0) {ans[num][0] = r0 - i; ans[num++][1] = c0 - j;}
+                }
+            }
+            level++;
+        }
+        return ans;
+    }
 }
