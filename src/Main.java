@@ -4,7 +4,9 @@ import array.DecompressRLElist;
 import array.NextGreaterElements;
 import array.ValidMountainArray;
 import number.Maximum69Number;
+import number.NumberOfSteps;
 import number.SingleNumber;
+import str.RemovePalindromeSub;
 
 public class Main {
 
@@ -187,6 +189,8 @@ public class Main {
    //     ArrayRankTransform.arrayRankTransform2(new int[]{100, 100, 100});
    //     AllCellsDistOrder.allCellsDistOrder2(2, 2, 0, 1);
    //     DecompressRLElist.decompressRLElist(new int[]{1, 2, 3, 4});
-        Maximum69Number.maximum69Number(9669);
+   //     Maximum69Number.maximum69Number(9669);
+   //     RemovePalindromeSub.removePalindromeSub("ababa");
+        NumberOfSteps.numberOfSteps(14);
     }
 }
