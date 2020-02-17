@@ -6,6 +6,7 @@ import array.ValidMountainArray;
 import number.Maximum69Number;
 import number.NumberOfSteps;
 import number.SingleNumber;
+import str.LongestPalindrome2;
 import str.RemovePalindromeSub;
 
 public class Main {
@@ -191,6 +192,8 @@ public class Main {
    //     DecompressRLElist.decompressRLElist(new int[]{1, 2, 3, 4});
    //     Maximum69Number.maximum69Number(9669);
    //     RemovePalindromeSub.removePalindromeSub("ababa");
-        NumberOfSteps.numberOfSteps(14);
+    //    NumberOfSteps.numberOfSteps(14);
+        LongestPalindrome2.longestPalindrome2("abcda");
+        LongestPalindrome2.longestPalindrome2("eeeeeeeee");
     }
 }
