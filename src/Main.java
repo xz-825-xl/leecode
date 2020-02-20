@@ -6,6 +6,7 @@ import array.ValidMountainArray;
 import number.Maximum69Number;
 import number.NumberOfSteps;
 import number.SingleNumber;
+import str.Convert;
 import str.LongestPalindrome2;
 import str.RemovePalindromeSub;
 
@@ -193,7 +194,9 @@ public class Main {
    //     Maximum69Number.maximum69Number(9669);
    //     RemovePalindromeSub.removePalindromeSub("ababa");
     //    NumberOfSteps.numberOfSteps(14);
-        LongestPalindrome2.longestPalindrome2("abcda");
-        LongestPalindrome2.longestPalindrome2("eeeeeeeee");
+    //    LongestPalindrome2.longestPalindrome2("abcda");
+    //    LongestPalindrome2.longestPalindrome2("eeeeeeeee");
+    //    Convert.convert("PAYPALISHIRING", 3);
+        Convert.convert("A", 1);
     }
 }
