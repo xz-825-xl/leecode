@@ -198,5 +198,7 @@ public class Main {
     //    LongestPalindrome2.longestPalindrome2("eeeeeeeee");
     //    Convert.convert("PAYPALISHIRING", 3);
         Convert.convert("A", 1);
+        String[] array = ("1_2_3_").split("_");
+        System.out.println(array.length);
     }
 }
