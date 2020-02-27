@@ -8,6 +8,7 @@ import number.NumberOfSteps;
 import number.SingleNumber;
 import str.Convert;
 import str.LongestPalindrome2;
+import str.MyAtoi;
 import str.RemovePalindromeSub;
 
 public class Main {
@@ -197,8 +198,9 @@ public class Main {
     //    LongestPalindrome2.longestPalindrome2("abcda");
     //    LongestPalindrome2.longestPalindrome2("eeeeeeeee");
     //    Convert.convert("PAYPALISHIRING", 3);
-        Convert.convert("A", 1);
-        String[] array = ("1_2_3_").split("_");
-        System.out.println(array.length);
+//        Convert.convert("A", 1);
+//        String[] array = ("1_2_3_").split("_");
+//        System.out.println(array.length);
+        MyAtoi.myAtoi2("-91283472332");
     }
 }
