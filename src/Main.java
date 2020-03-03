@@ -3,6 +3,7 @@ import array.ArrayRankTransform;
 import array.DecompressRLElist;
 import array.NextGreaterElements;
 import array.ValidMountainArray;
+import array.ValidSquare;
 import number.Maximum69Number;
 import number.NumberOfSteps;
 import number.SingleNumber;
@@ -201,6 +202,7 @@ public class Main {
 //        Convert.convert("A", 1);
 //        String[] array = ("1_2_3_").split("_");
 //        System.out.println(array.length);
-        MyAtoi.myAtoi2("-91283472332");
+        //MyAtoi.myAtoi2("-91283472332");
+        ValidSquare.validSquare(new int[]{0, 0}, new int[]{1, 1}, new int[]{1, 0}, new int[]{0, 1});
     }
 }
