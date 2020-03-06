@@ -205,7 +205,10 @@ public class Main {
 //        System.out.println(array.length);
         //MyAtoi.myAtoi2("-91283472332");
         //ValidSquare.validSquare(new int[]{0, 0}, new int[]{1, 1}, new int[]{1, 0}, new int[]{0, 1});
-        CanMeasureWater.canMeasureWater(3, 5, 4);
-        CanMeasureWater.canMeasureWater(34, 5, 6);
+        //CanMeasureWater.canMeasureWater(3, 5, 4);
+        //CanMeasureWater.canMeasureWater(34, 5, 6);
+        for (int i = 23; i <= 24; i++) {
+            System.out.println("{bspt_c101040!sszb#22}+{bspt_c101040!yxg#22}+{bspt_c101040!yxz#22}+{bspt_c101040!qt#22}+{bspt_c101040!zbgj#22}+{bspt_c101040!kcg#22}+{bspt_c101040!qtzhsy#22}+{bspt_c101040!yygj#22}+{bspt_c101040!wfplr#22}".replaceAll("#22", "#" + i));
+        }
     }
 }
