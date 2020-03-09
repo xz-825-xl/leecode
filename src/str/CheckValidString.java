@@ -1,7 +1,5 @@
 package str;
 
-import java.util.Stack;
-
 /**
  * 描述：678. 有效的括号字符串
  *
@@ -10,19 +8,10 @@ import java.util.Stack;
  */
 public class CheckValidString {
     public boolean checkValidString(String s) {
-        Stack<Character> stack = new Stack<>();
-        int count = 0;
-        for (char c : s.toCharArray()) {
-            if (c == '*') {
-                count++;
-                continue;
-            }
-            if (stack.isEmpty() || c == '(') {
-                stack.push(c);
-            } else if (c == ')' && stack.peek().equals('(')) {
-                stack.pop();
-            }
+        char[] chars = s.toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+
         }
-        return stack.isEmpty() || count >= stack.size();
+        return true;
     }
 }
