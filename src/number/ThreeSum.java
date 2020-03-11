@@ -2,9 +2,7 @@ package number;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  * 描述：15. 三数之和
@@ -13,16 +11,44 @@ import java.util.Set;
  * @date 2020/3/10 17:16
  */
 public class ThreeSum {
-    public List<List<Integer>> threeSum(int[] nums) {
+    public static List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();
         Arrays.sort(nums);
         if (nums.length == 0 || nums[0] > 0 || nums[nums.length - 1] < 0) {
             return list;
         }
-        Set<Integer> set = new HashSet<>();
-        for (int i = 0; i < nums.length; i++) {
-            set.add(nums[i]);
+
+        for (int i = 0; i < nums.length - 1; i++) {
+            int low = i + 1;
+            int high = nums.length - 1;
+            while (low < high) {
+                if (nums[i] + nums[low] + nums[high] == 0) {
+                    List<Integer> subList = new ArrayList<>();
+                    subList.add(nums[i]);
+                    subList.add(nums[low]);
+                    subList.add(nums[high]);
+                    list.add(subList);
+                    while (low < nums.length - 1 && nums[low] == nums[low + 1]) {
+                        low++;
+                    }
+                    low++;
+                    high--;
+                } else if (nums[i] + nums[low] + nums[high] > 0) {
+                    high--;
+                } else {
+                    low++;
+                }
+
+
+            }
+            while (i < nums.length - 1 && nums[i] == nums[i + 1]) {
+                i++;
+            }
         }
         return list;
+    }
+
+    public static void main(String[] args) {
+        threeSum(new int[]{-2,0,1,1,2});
     }
 }
