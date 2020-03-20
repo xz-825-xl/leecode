@@ -8,23 +8,21 @@ package number;
  */
 public class CountDigitOne {
     public static int countDigitOne(int n) {
-        int count = 0;
-        while (n > 0) {
-            count += getCountByNum(n);
-            n /= 10;
+        if (n <= 0) {
+            return 0;
         }
-        return count;
-    }
-
-    private static int getCountByNum(int num) {
-        int count = 0;
-        if (num < 10) {
-            return 1;
+        String s = String.valueOf(n);
+        int high = s.charAt(0) - '0';
+        int pow = (int) Math.pow(10, s.length() - 1);
+        int last = n - high * pow;
+        if (high == 1) {
+            return countDigitOne(pow - 1) + last + 1 + countDigitOne(last);
+        } else {
+            return pow + high * countDigitOne(pow - 1) + countDigitOne(last);
         }
-        return count;
     }
 
     public static void main(String[] args) {
-        countDigitOne(12);
+        countDigitOne(9);
     }
 }
