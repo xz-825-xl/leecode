@@ -63,8 +63,15 @@ public class MaxArea {
 
     public static int maxArea3(int[] height) {
         int rs = 0;
-        for (int i = 0; i < height.length; i++) {
-
+        int left = 0;
+        int right = height.length - 1;
+        while (left < right) {
+            rs = Math.max((right - left) * (height[left] > height[right] ? height[right] : height[left]), rs);
+            if (height[left] < height[right]) {
+                left++;
+            } else {
+                right--;
+            }
         }
         return rs;
     }
