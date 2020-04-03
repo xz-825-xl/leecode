@@ -30,14 +30,18 @@ public class FindTargetSumWays {
         rs[0][0] = 1;
         for (int i = 1; i < nums.length + 1; i++) {
             rs[i][0] = 1;
-            for (int j = 0; j < x + 1; j++) {
-
+            for (int j = 1; j < x + 1; j++) {
+                if (j >= nums[i - 1]) {
+                    rs[i][j] = rs[i - 1][j - nums[i - 1]] + rs[i - 1][j];
+                } else {
+                    rs[i][j] = rs[i - 1][j];
+                }
             }
         }
-        return rs[nums.length + 1][x + 1];
+        return rs[nums.length][x];
     }
 
     public static void main(String[] args) {
-        System.out.println(findTargetSumWays(new int[]{1, 1, 1, 1, 1}, 3));
+        System.out.println(findTargetSumWays2(new int[]{1, 1, 1, 1, 1}, 3));
     }
 }
