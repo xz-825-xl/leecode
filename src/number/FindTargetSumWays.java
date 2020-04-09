@@ -25,23 +25,22 @@ public class FindTargetSumWays {
         for (int i = 0; i < nums.length; i++) {
             sum += nums[i];
         }
+        if (sum < S || (S + sum) % 2 == 1) {
+            return 0;
+        }
         int x = (S + sum) / 2;
-        int[][] rs = new int[nums.length + 1][x + 1];
-        rs[0][0] = 1;
-        for (int i = 1; i < nums.length + 1; i++) {
-            rs[i][0] = 1;
-            for (int j = 1; j < x + 1; j++) {
-                if (j >= nums[i - 1]) {
-                    rs[i][j] = rs[i - 1][j - nums[i - 1]] + rs[i - 1][j];
-                } else {
-                    rs[i][j] = rs[i - 1][j];
-                }
+        int[] rs = new int[x + 1];
+        rs[0] = 1;
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = x; j >= nums[i]; j--) {
+                rs[j] = rs[j] + rs[j - nums[i]];
             }
         }
-        return rs[nums.length][x];
+        return rs[x];
     }
 
     public static void main(String[] args) {
         System.out.println(findTargetSumWays2(new int[]{1, 1, 1, 1, 1}, 3));
+        System.out.println(findTargetSumWays2(new int[]{1}, 2));
     }
 }
