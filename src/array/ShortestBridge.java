@@ -12,9 +12,7 @@ public class ShortestBridge {
         int count = 1;
         for (int i = 0; i < A.length; i++) {
             for (int j = 1; j < A[i].length; j++) {
-                if (A[i][j - 1] > 0) {
 
-                }
             }
         }
         return count;
