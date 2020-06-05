@@ -50,7 +50,6 @@ public class SpiralOrder {
                 }
             }
             jStart++;
-
         }
         return printResult;
     }
