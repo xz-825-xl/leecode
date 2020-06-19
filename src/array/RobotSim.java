@@ -1,5 +1,8 @@
 package array;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * 描述：874. 模拟行走机器人
  *
@@ -14,6 +17,10 @@ public class RobotSim {
         int[][] directions = new int[][]{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
         int directIndex = 0;
         int max = Integer.MIN_VALUE;
+        Set<String> set = new HashSet<>();
+        for (int i = 0; i < obstacles.length; i++) {
+            set.add(obstacles[i][0] + "_" + obstacles[i][1]);
+        }
         for (int i = 0; i < commands.length; i++) {
             int command = commands[i];
             if (command == -1) {
@@ -26,14 +33,7 @@ public class RobotSim {
                 for (int j = 0; j < command; j++) {
                     x += directions[directIndex][0];
                     y += directions[directIndex][1];
-                    boolean flag = true;
-                    for (int k = 0; k < obstacles.length; k++) {
-                        if (x == obstacles[k][0] && y == obstacles[k][1]) {
-                            flag = false;
-                            break;
-                        }
-                    }
-                    if (!flag) {
+                    if(set.contains(x + "_" + y)){
                         x -= directions[directIndex][0];
                         y -= directions[directIndex][1];
                     }
