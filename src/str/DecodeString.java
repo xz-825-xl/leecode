@@ -51,6 +51,47 @@ public class DecodeString {
         return charStack.isEmpty() ? "" : charStack.peek();
     }
 
+    public static String decodeString2(String s) {
+        char[] chars = s.toCharArray();
+        Stack<Integer> numStack = new Stack<>();
+        Stack<String> charStack = new Stack<>();
+        StringBuilder subBuilder = new StringBuilder();
+        int i = 0;
+        while (i < chars.length) {
+            if (Character.isDigit(chars[i])) {
+                String num = chars[i] + "";
+                while (Character.isDigit(chars[i + 1])){
+                    num = num + chars[i + 1];
+                    i++;
+                }
+                numStack.push(Integer.valueOf(num));
+            } else if (chars[i] == '[') {
+                charStack.push("[");
+            } else if (chars[i] != ']') {
+                if(!charStack.isEmpty() && charStack.peek().equals("[")){
+                    charStack.push(chars[i] + "");
+                } else {
+                    charStack.push((charStack.isEmpty() ? "" : charStack.pop()) + chars[i] + "");
+                }
+            } else {
+                String temp = charStack.pop();
+                if(!charStack.isEmpty() && charStack.peek().equals("[")) {
+                    int num = numStack.pop();
+                    for (int j = 0; j < num ; j++) {
+                        subBuilder.append(temp);
+                    }
+                    charStack.pop();
+                    charStack.push(charStack.isEmpty() || charStack.peek().equals("[") ? subBuilder.toString() : charStack.pop() + subBuilder.toString());
+                    subBuilder = new StringBuilder();
+                } else {
+                    charStack.push(temp);
+                }
+            }
+            i++;
+        }
+        return charStack.isEmpty() ? "" : charStack.peek();
+    }
+
     public static void main(String[] args) {
         //System.out.println(decodeString("3[a2[c]]"));
         //System.out.println(decodeString("leetcode"));
