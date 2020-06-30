@@ -1,8 +1,5 @@
 package array;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * 描述：面试题03. 数组中重复的数字
  *
@@ -12,13 +9,14 @@ import java.util.Set;
 public class FindRepeatNumber {
 
     public int findRepeatNumber(int[] nums) {
-        Set<Integer> set = new HashSet<>();
-        for (int i = 0; i < nums.length; i++) {
-            if(set.contains(nums[i])){
-                return nums[i];
+        int[] a = new int[nums.length];
+        for (int n : nums) {
+            if (a[n] == 0) {
+                a[n]++;
+            } else {
+                return n;
             }
-            set.add(nums[i]);
         }
-        return nums[0];
+        return 0;
     }
 }
