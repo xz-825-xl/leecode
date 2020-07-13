@@ -2,6 +2,7 @@ package array;
 
 import java.util.Deque;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 
 /**
  * 描述：剑指 Offer 59 - I. 滑动窗口的最大值
@@ -43,6 +44,19 @@ public class MaxSlidingWindow {
     }
 
     public static void main(String[] args) {
-        maxSlidingWindow(new int[]{}, 0);
+        //maxSlidingWindow(new int[]{}, 0);
+        PriorityQueue<Integer> queue = new PriorityQueue<>();
+        queue.offer(1);
+        queue.offer(3);
+        queue.offer(10);
+        queue.offer(5);
+        queue.offer(12);
+        queue.offer(7);
+        queue.offer(8);
+        queue.offer(9);
+        queue.offer(2);
+
+        queue.remove(3);
+        queue.remove(9);
     }
 }
