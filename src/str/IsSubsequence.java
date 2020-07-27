@@ -7,6 +7,7 @@ package str;
  * @date 2020/2/12 10:33
  */
 public class IsSubsequence {
+
     public boolean isSubsequence(String s, String t) {
         if (s.length() == 0) {
             return true;
@@ -23,6 +24,17 @@ public class IsSubsequence {
             }
         }
         return false;
+    }
+
+    public boolean isSubsequence2(String s, String t) {
+        int index = -1;
+        for (int i = 0; i < s.length(); i++) {
+            index = t.indexOf(s.charAt(i), index + 1);
+            if (index == -1) {
+                return false;
+            }
+        }
+        return true;
     }
 
 }
