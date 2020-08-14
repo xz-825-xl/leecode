@@ -1,7 +1,7 @@
 package number;
 
 /**
- * 描述：29. 两数相除 (未完成)
+ * 描述：29. 两数相除
  *
  * @author zy
  * @date 2020/7/21 14:43
@@ -16,6 +16,12 @@ public class Divide {
         divisor1 = divisor1 < 0 ? -divisor1 : divisor1;
         if (divisor1 > div) {
             return 0;
+        }
+        if (divisor1 == 1) {
+            if (flag && div > Integer.MAX_VALUE) {
+                return Integer.MAX_VALUE;
+            }
+            return flag ? (int) div : (int) -div;
         }
         int count = 1;
         long sum = divisor1;
