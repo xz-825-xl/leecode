@@ -10,68 +10,34 @@ import java.util.List;
  * @date 2020/8/25 9:03
  */
 public class FindSubsequences {
-    public static List<List<Integer>> findSubsequences(int[] nums) {
-        List<List<Integer>> list = new ArrayList<>();
-        List<List<Integer>> increasingList = new ArrayList<>();
-        for (int i = 0; i < nums.length; i++) {
-            List<Integer> subList = new ArrayList<>();
-            if (increasingList.isEmpty()) {
-                subList.add(nums[i]);
-            } else {
-                boolean flag = false;
-                for (List<Integer> sub : increasingList) {
-                    if (nums[i] >= sub.get(sub.size() - 1)) {
-                        sub.add(nums[i]);
-                        flag = true;
-                    }
-                }
-                if (flag) {
-                    subList.add(nums[i]);
-                }
-            }
-            increasingList.add(subList);
-        }
+    List<Integer> temp = new ArrayList<Integer>();
+    List<List<Integer>> ans = new ArrayList<List<Integer>>();
 
-        for (List<Integer> sub : increasingList) {
-            getIncreasingList(list, sub);
-        }
-        return list;
+    public List<List<Integer>> findSubsequences(int[] nums) {
+        dfs(0, Integer.MIN_VALUE, nums);
+        return ans;
     }
 
-    private static void getIncreasingList(List<List<Integer>> list, List<Integer> sub) {
-        if (sub.size() < 2) {
+    public void dfs(int cur, int last, int[] nums) {
+        if (cur == nums.length) {
+            if (temp.size() >= 2) {
+                ans.add(new ArrayList<>(temp));
+            }
             return;
         }
-        for (int i = 1; i < sub.size() - 1; i++) {
-            for (int j = 1; j < sub.size() - i + 1; j++) {
-                List<Integer> sublist = new ArrayList<>();
-                sublist.add(sub.get(0));
-                for (int k = j; k < j + i; k++) {
-                    sublist.add(sub.get(k));
-                }
-                if (!list.isEmpty()) {
-                    List<Integer> lastList = list.get(list.size() - 1);
-                    if (sublist.size() == lastList.size()) {
-                        boolean flag = true;
-                        for (int k = 0; k < sublist.size(); k++) {
-                            if (sublist.get(k) != lastList.get(k)) {
-                               flag = false;
-                               break;
-                            }
-                        }
-                        if(flag) {
-                            continue;
-                        }
-                    }
-                }
-
-                list.add(sublist);
-            }
+        if (nums[cur] >= last) {
+            temp.add(nums[cur]);
+            dfs(cur + 1, nums[cur], nums);
+            temp.remove(temp.size() - 1);
         }
-        list.add(sub);
+        if (nums[cur] != last) {
+            dfs(cur + 1, last, nums);
+        }
     }
 
+
     public static void main(String[] args) {
-        findSubsequences(new int[]{4, 6, 7, 7});
+        FindSubsequences findSubsequences = new FindSubsequences();
+        findSubsequences.findSubsequences(new int[]{4, 6, 7, 7});
     }
 }
