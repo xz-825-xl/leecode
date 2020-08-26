@@ -1,7 +1,7 @@
 package proxy;
 
 
-import sun.misc.ProxyGenerator;
+//import sun.misc.ProxyGenerator;
 
 import java.io.FileOutputStream;
 import java.lang.reflect.InvocationTargetException;
@@ -31,13 +31,13 @@ public class MyDynamicProxy {
         Method method = obj.getClass().getMethod("sayHello");
         method.invoke(obj);
 
-        byte[] bytes = ProxyGenerator.generateProxyClass("com.sun.proxy.$Proxy0", HelloImpl2.class.getInterfaces(), 1);
-        try{
-            FileOutputStream out = new FileOutputStream( "proxy.class" );
-            out.write( bytes );
-            out.close();
-        }catch( Exception e ) {
-            e.printStackTrace();
-        }
+//        byte[] bytes = ProxyGenerator.generateProxyClass("com.sun.proxy.$Proxy0", HelloImpl2.class.getInterfaces(), 1);
+//        try{
+//            FileOutputStream out = new FileOutputStream( "proxy.class" );
+//            out.write( bytes );
+//            out.close();
+//        }catch( Exception e ) {
+//            e.printStackTrace();
+//        }
     }
 }
