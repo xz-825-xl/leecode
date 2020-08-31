@@ -3,51 +3,37 @@ package str;
 import java.util.Arrays;
 
 /**
- * 描述：1370. 上升下降字符串(未完成)
+ * 描述：1370. 上升下降字符串
  *
  * @author Zhangying
  * @date 2020/8/28 15:37
  */
 public class SortString {
-    boolean[] flag;
 
     public String sortString(String s) {
         StringBuilder builder = new StringBuilder();
         char[] chars = s.toCharArray();
-        Arrays.sort(chars);
-        flag = new boolean[chars.length];
-        Arrays.fill(flag, true);
+        int[] counts = new int[26];
+        Arrays.fill(counts, 0);
+        for (int i = 0; i < chars.length; i++) {
+            counts[chars[i] - 'a']++;
+        }
+        while (builder.length() < chars.length) {
+            for (int i = 0; i < 26; i++) {
+                if (counts[i] > 0) {
+                    builder.append((char) (i + 'a'));
+                }
+                counts[i]--;
+            }
 
-        int count = 0;
-        while (count < chars.length) {
-            count = ascCount(count, chars, 0, builder);
-            count = descCount(count, chars, chars.length - 1, builder);
+            for (int i = 25; i >= 0; i--) {
+                if (counts[i] > 0) {
+                    builder.append((char) (i + 'a'));
+                }
+                counts[i]--;
+            }
         }
         return builder.toString();
-    }
-
-    private int ascCount(int count, char[] chars, int i, StringBuilder builder) {
-        if (count < chars.length && i < chars.length) {
-            if (flag[i] && (i == 0 || (i > 0 && (!flag[i - 1] || chars[i] != chars[i - 1])))) {
-                builder.append(chars[i]);
-                flag[i] = false;
-                count++;
-            }
-            return ascCount(count, chars, i + 1, builder);
-        }
-        return count;
-    }
-
-    private int descCount(int count, char[] chars, int i, StringBuilder builder) {
-        if (count < chars.length && i >= 0) {
-            if (flag[i] && (i == chars.length - 1 || (i < chars.length - 1 && (!flag[i + 1] || chars[i] != chars[i + 1])))) {
-                builder.append(chars[i]);
-                flag[i] = false;
-                count++;
-            }
-            return descCount(count, chars, i - 1, builder);
-        }
-        return count;
     }
 
     public static void main(String[] args) {
