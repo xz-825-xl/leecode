@@ -2,7 +2,7 @@ package array;
 
 /**
  * 描述：486. 预测赢家
- *
+ *  todo:
  * @author Zhangying
  * @date 2020/9/1 9:06
  */
