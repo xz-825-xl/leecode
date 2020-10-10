@@ -2,9 +2,7 @@ package list;
 
 import entity.ListNode;
 
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 /**
@@ -25,6 +23,27 @@ public class DetectCycle {
         }
         set.add(head.toString());
         return detectCycle(head.next);
+    }
+
+    public ListNode detectCycle2(ListNode head) {
+        ListNode fast = head;
+        ListNode slow = head;
+        while (true) {
+            if (fast == null || fast.next == null) {
+                return null;
+            }
+            fast = fast.next.next;
+            slow = slow.next;
+            if (fast == slow) {
+                break;
+            }
+        }
+        slow = head;
+        while (fast != slow) {
+            slow = slow.next;
+            fast = fast.next;
+        }
+        return slow;
     }
 
     public static void main(String[] args) {
