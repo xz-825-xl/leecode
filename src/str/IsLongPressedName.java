@@ -43,4 +43,32 @@ public class IsLongPressedName {
         }
         return index == chars.length;
     }
+
+    public boolean isLongPressedName2(String name, String typed) {
+        char[] chars = name.toCharArray();
+        char[] chars1 = typed.toCharArray();
+        int index = 0;
+        int index1 = 0;
+        while (index < chars.length && index1 < chars1.length) {
+            if (chars[index] == chars1[index1]) {
+                index++;
+            } else if(index1 == 0 || chars1[index1] != chars1[index1 - 1]){
+                return false;
+            }
+            index1++;
+        }
+        if(index1 < chars1.length) {
+            for (int i = index1; i < chars1.length; i++) {
+                if(chars1[i] != chars1[i - 1]) {
+                    return false;
+                }
+            }
+        }
+        return index == chars.length;
+    }
+
+    public static void main(String[] args) {
+        //new IsLongPressedName().isLongPressedName2("alex", "aaleelx");
+        new IsLongPressedName().isLongPressedName2("alex", "alexxr");
+    }
 }

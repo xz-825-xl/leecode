@@ -9,16 +9,15 @@ import java.util.List;
  */
 public class Node {
 
-//    public int val;
-//    public List<Node> children;
+    public List<Node> children;
 //
 //
 //    public Node(int _val, List<Node> _children) {
 //        val = _val;
 //        children = _children;
 //    }
-//
-//    public List<Node> neighbors;
+
+    public List<Node> neighbors;
 //
 //    public Node() {
 //        val = 0;
