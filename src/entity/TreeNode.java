@@ -47,19 +47,19 @@ public class TreeNode {
     }
 
     public static TreeNode createTreeNodes() {
-        TreeNode treeNode = new TreeNode(1);
-        TreeNode treeNode2 = new TreeNode(2);
-        TreeNode treeNode3 = new TreeNode(3);
-        TreeNode treeNode4 = new TreeNode(4);
-        TreeNode treeNode5 = new TreeNode(5);
+        TreeNode treeNode = new TreeNode(4);
+        TreeNode treeNode2 = new TreeNode(9);
+        TreeNode treeNode3 = new TreeNode(0);
+        TreeNode treeNode4 = new TreeNode(5);
+        TreeNode treeNode5 = new TreeNode(1);
 //        TreeNode treeNode6 = new TreeNode(4);
 //        TreeNode treeNode7 = new TreeNode(7);
 //        TreeNode treeNode8 = new TreeNode(2);
 //        TreeNode treeNode9 = new TreeNode(1);
         treeNode.left = treeNode2;
         treeNode.right = treeNode3;
-        treeNode3.left = treeNode4;
-        treeNode3.right = treeNode5;
+        treeNode2.left = treeNode4;
+        treeNode2.right = treeNode5;
 //        treeNode2.left = treeNode4;
 //        treeNode4.left = treeNode7;
 //        treeNode4.right = treeNode8;
